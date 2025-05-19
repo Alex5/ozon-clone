@@ -1,5 +1,7 @@
+import { useParams } from "react-router";
+
 export function ProductPage() {
-    return (
-        <div>Cart</div>
-    )
+  const { productId } = useParams<{ productId: string }>();
+
+  return <div>product: {productId}</div>;
 }

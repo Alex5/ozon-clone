@@ -1,8 +1,8 @@
-import useSWR from "swr";
 import type { ProductType } from "./types";
+import useSWRImmutable from "swr/immutable";
 
 export function useProducts() {
-  const { data, ...rest } = useSWR<ProductType[]>("products");
+  const { data, ...rest } = useSWRImmutable<ProductType[]>("products");
 
   return {
     products: data,

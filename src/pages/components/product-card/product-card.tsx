@@ -9,7 +9,7 @@ export function ProductCard({ product }: { product: ProductType }) {
   return (
     <Card>
       <div style={{ position: "relative" }}>
-        <Image src={product.avatar} aspectRatio={"1 / 1"} />
+        <Image src={product.image} aspectRatio={"1 / 1"} />
         <Float placement="bottom-start">
           <div style={{ display: "flex", gap: "10px" }}>
             <span style={{ backgroundColor: "red", padding: "4px" }}>new</span>
@@ -19,12 +19,14 @@ export function ProductCard({ product }: { product: ProductType }) {
           </div>
         </Float>
       </div>
-
       <CardContent>
         <Text size="md" palette="red">
-          {product.price}
+          {new Intl.NumberFormat("ru-RU", {
+            style: "currency",
+            currency: "RUR",
+          }).format(product.price)}
         </Text>
-        <Text size="sm">{product.name}</Text>
+        <Text size="sm">{product.title}</Text>
       </CardContent>
       <footer>
         <button>Buy</button>

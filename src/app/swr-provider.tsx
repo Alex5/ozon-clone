@@ -7,14 +7,5 @@ type SWRProviderProps = {
 };
 
 export function SWRProvider({ children }: SWRProviderProps) {
-  return (
-    <SWRConfig
-      value={{
-        refreshInterval: 3000,
-        fetcher: (resource, init) => fetcher(resource, init),
-      }}
-    >
-      {children}
-    </SWRConfig>
-  );
+  return <SWRConfig value={{ fetcher }}>{children}</SWRConfig>;
 }
