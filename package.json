@@ -34,5 +34,8 @@
     "workerDirectory": [
       ""
     ]
+  },
+  "pnpm": {
+    "neverBuiltDependencies": []
   }
 }
