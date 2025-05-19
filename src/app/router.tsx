@@ -4,20 +4,27 @@ import {
 } from "react-router";
 import { CartPage } from "../pages/cart/page";
 import { ProductPage } from "../pages/product/page";
-import { RootPageLayout } from "../pages/root/layout";
+import { RootPageLayout } from "../pages/layout";
+import { RootPage } from "../pages/page";
 
 const router = createBrowserRouter([
   {
-    index: true,
+    path: "/",
     Component: RootPageLayout,
-  },
-  {
-    path: "cart",
-    Component: CartPage,
-  },
-  {
-    path: "product/:productId",
-    Component: ProductPage,
+    children: [
+      {
+        index: true,
+        Component: RootPage,
+      },
+      {
+        path: "/cart",
+        Component: CartPage,
+      },
+      {
+        path: "/product/:productId",
+        Component: ProductPage,
+      },
+    ],
   },
 ]);
 

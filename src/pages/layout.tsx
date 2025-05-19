@@ -1,11 +1,11 @@
-import { Container } from "@shared/ui/container/container";
-import { RootPage } from "./page";
+import { Container } from "../shared/ui/container/container";
+import { Outlet } from "react-router";
 
 export function RootPageLayout() {
   return (
     <Container>
       <header>Header</header>
-      <RootPage />
+      <Outlet />
       <footer>Footer</footer>
     </Container>
   );
