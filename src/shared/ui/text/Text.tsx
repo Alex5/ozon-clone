@@ -11,7 +11,11 @@ export function Text({
   palette?: "red";
 }) {
   return (
-    <span className={classes.Text} data-size={size} data-palette={palette}>
+    <span
+      className={classes.Text}
+      data-ui-size={size}
+      data-ui-palette={palette}
+    >
       {children}
     </span>
   );

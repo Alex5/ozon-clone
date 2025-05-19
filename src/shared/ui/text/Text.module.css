@@ -2,14 +2,14 @@
   color: black;
 }
 
-.Text [data-size="sm"] {
+.Text[data-ui-size="sm"] {
   font-size: 14px;
 }
 
-.Text [data-size="md"] {
+.Text[data-ui-size="md"] {
   font-size: 16px;
 }
 
-.Text [data-palette="red"] {
+.Text[data-ui-palette="red"] {
   color: red;
 }
