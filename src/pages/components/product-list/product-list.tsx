@@ -1,10 +1,9 @@
-import { useProducts } from "@shared/api/hooks/use-products";
+import { useProducts } from "shared/api/hooks/use-products";
 import { ProductCard } from "../product-card/product-card";
-import { Grid } from "@shared/ui/grid/grid";
+import { Grid } from "shared/ui/grid/grid";
 
 export function ProductList() {
   const { products } = useProducts();
-  // deplot
 
   return (
     <Grid>
