@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { SWRConfig } from "swr";
-import { fetcher } from "shared/api/fetcher";
+import { fetcher } from "../shared/api/fetcher";
 
 type SWRProviderProps = {
   children: ReactNode;

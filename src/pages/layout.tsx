@@ -1,4 +1,4 @@
-import { Container } from "shared/ui/container/container";
+import { Container } from "../shared/ui/container/container";
 import { Outlet } from "react-router";
 
 export function RootPageLayout() {
