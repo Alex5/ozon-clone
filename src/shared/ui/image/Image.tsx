@@ -1,21 +1,13 @@
-import type { ReactNode } from "react";
+import classes from "./image.module.css";
 
 export function Image({
   aspectRatio,
   src,
-  children,
 }: {
   src?: string;
   aspectRatio?: string;
-  children?: ReactNode;
 }) {
   return (
-    <img
-      src={src}
-      alt=""
-      style={{ aspectRatio, position: children ? "relative" : "inherit" }}
-    >
-      {children}
-    </img>
+    <img src={src} alt="" style={{ aspectRatio }} className={classes.image} />
   );
 }

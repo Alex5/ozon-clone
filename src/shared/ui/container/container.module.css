@@ -1,0 +1,21 @@
+.container {
+  max-width: 1120px; /* обычная фиксированная максимальная ширина */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Если fluid="true" — ширина 100% */
+.container[data-fluid="true"] {
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Если centerContent="true" — флексовый центринг */
+.container[data-center-content="true"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

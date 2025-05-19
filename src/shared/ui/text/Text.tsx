@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import classes from "./Text.module.css";
+import classes from "./text.module.css";
 
 export function Text({
   children,

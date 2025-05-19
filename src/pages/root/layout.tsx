@@ -1,11 +1,12 @@
+import { Container } from "@shared/ui/container/container";
 import { RootPage } from "./page";
 
 export function RootPageLayout() {
   return (
-    <div>
+    <Container>
       <header>Header</header>
       <RootPage />
       <footer>Footer</footer>
-    </div>
+    </Container>
   );
 }

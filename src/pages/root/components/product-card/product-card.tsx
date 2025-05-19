@@ -1,14 +1,15 @@
 import type { ProductType } from "@shared/api/hooks/use-products";
 import { Card } from "@shared/ui/card/card";
 import { CardContent } from "@shared/ui/card/card-content";
-import { Float } from "@shared/ui/float/Float";
-import { Image } from "@shared/ui/image/Image";
-import { Text } from "@shared/ui/text/Text";
+import { Float } from "@shared/ui/float/float";
+import { Image } from "@shared/ui/image/image";
+import { Text } from "@shared/ui/text/text";
 
 export function ProductCard({ product }: { product: ProductType }) {
   return (
     <Card>
-      <Image src={product.avatar} aspectRatio={"1 / 1"}>
+      <div style={{ position: "relative" }}>
+        <Image src={product.avatar} aspectRatio={"1 / 1"} />
         <Float placement="bottom-start">
           <div style={{ display: "flex", gap: "10px" }}>
             <span style={{ backgroundColor: "red", padding: "4px" }}>new</span>
@@ -17,7 +18,8 @@ export function ProductCard({ product }: { product: ProductType }) {
             </span>
           </div>
         </Float>
-      </Image>
+      </div>
+
       <CardContent>
         <Text size="md" palette="red">
           {product.price}

@@ -5,7 +5,12 @@ export function ProductList() {
   const { products } = useProducts();
 
   return (
-    <div>
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+      }}
+    >
       {products?.map((product) => (
         <ProductCard key={product.id} product={product} />
       ))}
