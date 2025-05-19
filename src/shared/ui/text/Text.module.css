@@ -1,0 +1,15 @@
+.Text {
+  color: black;
+}
+
+.Text [data-size="sm"] {
+  font-size: 14px;
+}
+
+.Text [data-size="md"] {
+  font-size: 16px;
+}
+
+.Text [data-palette="red"] {
+  color: red;
+}

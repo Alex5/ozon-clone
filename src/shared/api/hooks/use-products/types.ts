@@ -3,4 +3,5 @@ export type ProductType = {
   avatar: string;
   name: string;
   createdAt: string;
+  price: number;
 };
