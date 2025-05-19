@@ -4,6 +4,7 @@ import { Grid } from "@shared/ui/grid/grid";
 
 export function ProductList() {
   const { products } = useProducts();
+  // deplot
 
   return (
     <Grid>
