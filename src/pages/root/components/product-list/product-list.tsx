@@ -1,16 +1,12 @@
+import { useProducts } from "@shared/api/hooks/use-products";
 import { ProductCard } from "../product-card/product-card";
 
-const products = [
-  {
-    id: 1,
-    name: "product 1",
-  },
-];
-
 export function ProductList() {
+  const { products } = useProducts();
+
   return (
     <div>
-      {products.map((product) => (
+      {products?.map((product) => (
         <ProductCard key={product.id} product={product} />
       ))}
     </div>
