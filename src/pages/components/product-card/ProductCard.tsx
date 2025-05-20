@@ -1,9 +1,11 @@
 import type { ProductType } from "../../../shared/api/hooks/use-products";
 import { Card } from "@shared/ui/card/Card";
-import { CardContent } from "@shared/ui/card/CardContent";
 import { Float } from "@shared/ui/float/Float";
 import { Image } from "@shared/ui/image/Image";
 import { Text } from "@shared/ui/text/Text";
+
+// component ui
+import { NewBadge } from "./ui/NewBadge";
 
 export function ProductCard({ product }: { product: ProductType }) {
   return (
@@ -16,26 +18,29 @@ export function ProductCard({ product }: { product: ProductType }) {
           aspectRatio={"1 / 1"}
         />
         <Float placement="bottom-start">
-          <div style={{ display: "flex", gap: "10px" }}>
-            <span style={{ backgroundColor: "red", padding: "4px" }}>new</span>
-            <span style={{ backgroundColor: "green", padding: "4px" }}>
-              sale
-            </span>
-          </div>
+          <NewBadge />
+        </Float>
+        <Float placement="bottom-end">
+          <button
+            style={{
+              padding: "12px",
+              borderRadius: "24px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            +
+          </button>
         </Float>
       </div>
-      <CardContent>
-        <Text size="md" palette="red">
-          {new Intl.NumberFormat("ru-RU", {
-            style: "currency",
-            currency: "RUR",
-          }).format(product.pricing.amountPrice)}
-        </Text>
-        <Text size="sm">{product.title}</Text>
-      </CardContent>
-      <footer>
-        <button>Buy</button>
-      </footer>
+      <Text size="md">
+        {new Intl.NumberFormat("ru-RU", {
+          style: "currency",
+          currency: "RUR",
+        }).format(product.pricing.price)}
+      </Text>
+      <Text size="sm">{product.title}</Text>
     </Card>
   );
 }
