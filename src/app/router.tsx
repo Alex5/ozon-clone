@@ -4,8 +4,8 @@ import {
 } from "react-router";
 import { CartPage } from "../pages/cart/page";
 import { ProductPage } from "../pages/product/page";
-import { RootPageLayout } from "../pages/layout";
-import { RootPage } from "../pages/page";
+import { RootPageLayout } from "../pages/root/layout";
+import { RootPage } from "../pages/root/page";
 
 const router = createBrowserRouter([
   {
