@@ -7,9 +7,7 @@ export default defineConfig({
   base: "/",
   plugins: [
     react(),
-    tsconfigPaths({
-      projects: ["./tsconfig.app.json"],
-    }),
+    tsconfigPaths(),
   ],
   // resolve: {
   //   alias: [
