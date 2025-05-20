@@ -1,11 +1,11 @@
+import { Card } from "src/shared/ui/card/Card";
 import type { ProductType } from "../../../shared/api/hooks/use-products";
-import { Card } from "@shared/ui/card/Card";
-import { Float } from "@shared/ui/float/Float";
-import { Image } from "@shared/ui/image/Image";
-import { Text } from "@shared/ui/text/Text";
 
 // component ui
 import { NewBadge } from "./ui/NewBadge";
+import { Image } from "src/shared/ui/image/Image";
+import { Float } from "src/shared/ui/float/Float";
+import { Text } from "src/shared/ui/text/Text";
 
 export function ProductCard({ product }: { product: ProductType }) {
   return (
