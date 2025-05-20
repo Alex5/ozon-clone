@@ -1,6 +1,6 @@
-import { useProducts } from "src/shared/api/hooks/use-products/useProducts";
+import { useProducts } from "../../../shared/api/hooks/use-products/useProducts";
+import { Grid } from "../../../shared/ui/grid/Grid";
 import { ProductCard } from "../product-card/ProductCard";
-import { Grid } from "src/shared/ui/grid/Grid";
 
 export function ProductList() {
   const { products } = useProducts();
