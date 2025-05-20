@@ -1,5 +1,5 @@
 import type { ProductType } from "../../../shared/api/hooks/use-products/types";
-import { Card } from "../../../shared/ui/card/Card";
+// import { Card } from "../../../shared/ui/card/Card";
 import { Float } from "../../../shared/ui/float/Float";
 import { Image } from "../../../shared/ui/image/Image";
 import { Text } from "../../../shared/ui/text/Text";
@@ -7,7 +7,7 @@ import { NewBadge } from "./ui/NewBadge";
 
 export function ProductCard({ product }: { product: ProductType }) {
   return (
-    <Card>
+    <article>
       <div style={{ position: "relative" }}>
         <Image
           src={product.snippetImage.url
@@ -39,6 +39,6 @@ export function ProductCard({ product }: { product: ProductType }) {
         }).format(product.pricing.price)}
       </Text>
       <Text size="sm">{product.title}</Text>
-    </Card>
+    </article>
   );
 }
