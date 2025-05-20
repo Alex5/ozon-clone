@@ -5,7 +5,12 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   base: "/",
-  plugins: [react(), tsconfigPaths()],
+  plugins: [
+    react(),
+    tsconfigPaths({
+      projects: ["./tsconfig.app.json"],
+    }),
+  ],
   // resolve: {
   //   alias: [
   //     {
