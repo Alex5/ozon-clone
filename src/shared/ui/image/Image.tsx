@@ -1,4 +1,4 @@
-import classes from "./image.module.css";
+import classes from "./Image.module.css";
 
 export function Image({
   aspectRatio,
