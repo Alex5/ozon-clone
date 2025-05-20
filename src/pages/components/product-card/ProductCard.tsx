@@ -1,4 +1,4 @@
-import type { ProductType } from "../../../../shared/api/hooks/use-products";
+import type { ProductType } from "../../../shared/api/hooks/use-products";
 import { Card } from "@shared/ui/card/Card";
 import { Float } from "@shared/ui/float/Float";
 import { Image } from "@shared/ui/image/Image";
