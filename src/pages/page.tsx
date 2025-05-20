@@ -1,4 +1,4 @@
-import { ProductList } from "./components/product-list/product-list";
+import { ProductList } from "./components/product-list/ProductList";
 
 export function RootPage() {
   return (

@@ -1,9 +1,9 @@
 import type { ProductType } from "../../../shared/api/hooks/use-products";
-import { Card } from "../../../shared/ui/card";
-import { CardContent } from "../../../shared/ui/card";
-import { Float } from "../../../shared/ui/float";
-import { Image } from "../../../shared/ui/image";
-import { Text } from "../../../shared/ui/text";
+import { Card } from "@shared/ui/card/Card";
+import { CardContent } from "@shared/ui/card/CardContent";
+import { Float } from "@shared/ui/float/Float";
+import { Image } from "@shared/ui/image/Image";
+import { Text } from "@shared/ui/text/Text";
 
 export function ProductCard({ product }: { product: ProductType }) {
   return (

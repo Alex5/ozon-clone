@@ -39,7 +39,7 @@ document.head.appendChild(style);
 // Запуск моков
 async function enableMocking() {
   const { worker } = await import("./mocks/browser");
-  
+
   return worker.start();
 }
 
