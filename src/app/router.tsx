@@ -26,7 +26,9 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+], {
+  basename: '/react-lavka'
+});
 
 export function RouterProvider() {
   return <ReactRouterProvider router={router} />;
