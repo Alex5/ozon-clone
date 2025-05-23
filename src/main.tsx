@@ -39,9 +39,11 @@ document.head.appendChild(style);
 async function enableMocking() {
   const { worker } = await import("./mocks/browser");
 
+  const url = `${import.meta.env.BASE_URL}mockServiceWorker.js`;
+
   return worker.start({
     serviceWorker: {
-      url: `${import.meta.env.BASE_URL}/mockServiceWorker.js`,
+      url: url,
     },
   });
 }
