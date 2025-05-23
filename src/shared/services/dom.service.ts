@@ -1,7 +1,10 @@
 export function prepareRoot() {
   const root = document.getElementById("root")!;
 
-  root.style.setProperty("background-color", "#f5f7fa");
+  root.style.setProperty(
+    "background-color",
+    "var(--react-lavka-color-background)"
+  );
 
   return Promise.resolve(root);
 }

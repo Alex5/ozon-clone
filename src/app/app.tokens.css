@@ -6,7 +6,7 @@
   --react-lavka-color-warning: #ffc107;
   --react-lavka-color-danger: #dc3545;
 
-  --react-lavka-color-background: #ffffff;
+  --react-lavka-color-background: #f5f7fa;
   --react-lavka-color-surface: #f9f9f9;
   --react-lavka-color-border: #e0e0e0;
   --react-lavka-color-text-primary: #1a1a1a;
@@ -31,6 +31,7 @@
   --react-lavka-radius-sm: 4px;
   --react-lavka-radius-md: 8px;
   --react-lavka-radius-lg: 16px;
+  --react-lavka-radius-xl: 32px;
   --react-lavka-radius-round: 50%;
 
   /* Тени */

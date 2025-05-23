@@ -2,18 +2,21 @@ import type { ProductType } from "../../../shared/api/hooks/use-products/types";
 import { Card } from "../../../shared/ui/card/Card";
 import { Float } from "../../../shared/ui/float/Float";
 import { Image } from "../../../shared/ui/image/Image";
-import { Text } from "../../../shared/ui/text/Text";
+import { Text } from "@shared/ui/text/Text";
 import { NewBadge } from "./ui/NewBadge";
 
 export function ProductCard({ product }: { product: ProductType }) {
+  const imageSrc = product.snippetImage.url
+    .replace("{w}", "600")
+    .replace("{h}", "600");
+
   return (
     <Card>
       <div style={{ position: "relative" }}>
         <Image
-          src={product.snippetImage.url
-            .replace("{w}", "600")
-            .replace("{h}", "600")}
+          src={imageSrc}
           aspectRatio={"1 / 1"}
+          style={{ borderRadius: "var(--react-lavka-radius-xl)" }}
         />
         <Float placement="bottom-start">
           <NewBadge />
