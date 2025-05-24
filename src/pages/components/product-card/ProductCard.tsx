@@ -5,6 +5,8 @@ import { Image } from "../../../shared/ui/image/Image";
 import { Text } from "@shared/ui/text/Text";
 import { NewBadge } from "./ui/NewBadge";
 
+import classes from "./product-card.module.css";
+
 export function ProductCard({ product }: { product: ProductType }) {
   const imageSrc = product.snippetImage.url
     .replace("{w}", "600")
@@ -13,11 +15,7 @@ export function ProductCard({ product }: { product: ProductType }) {
   return (
     <Card>
       <div style={{ position: "relative" }}>
-        <Image
-          src={imageSrc}
-          aspectRatio={"1 / 1"}
-          style={{ borderRadius: "var(--react-lavka-radius-xl)" }}
-        />
+        <Image src={imageSrc} aspectRatio={"1 / 1"} className={classes.image} />
         <Float placement="bottom-start">
           <NewBadge />
         </Float>
