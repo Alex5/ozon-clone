@@ -1,5 +1,27 @@
+.color-pallete-gray {
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+
 .color-pallete-yellow {
   background-color: var(--react-lavka-color-primary);
   border-color: var(--react-lavka-color-primary);
-  /* color: var(--react-lavka-color-primary); */
+  color: white;
+}
+
+.variant-outline {
+  background-color: transparent;
+}
+
+.size-lg {
+  height: var(--react-lavka-size-lg);
+}
+
+.rounded-full {
+  border-radius: var(--react-lavka-size-lg);
+}
+
+.shadow-md {
+  box-shadow: var(--react-lavka-shadow-md);
 }

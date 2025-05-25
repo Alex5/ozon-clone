@@ -20,8 +20,21 @@ export function ProductCard({ product }: { product: ProductType }) {
           <NewBadge />
         </Float>
         <Float placement="bottom-end">
-          <Button colorPallete="yellow" size="icon">
-            +
+          <Button size="lg" radius="rounded">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M11.5 3a.5.5 0 00-.5.5V11H3.5a.5.5 0 00-.5.5v1a.5.5 0 00.5.5H11v7.5a.5.5 0 00.5.5h1a.5.5 0 00.5-.5V13h7.5a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5H13V3.5a.5.5 0 00-.5-.5h-1z"
+              ></path>
+            </svg>
           </Button>
         </Float>
       </div>
@@ -32,6 +45,7 @@ export function ProductCard({ product }: { product: ProductType }) {
         }).format(product.pricing.price)}
       </Text>
       <Text size="sm">{product.title}</Text>
+      <Button colorPallete="yellow">В корзину</Button>
     </Card>
   );
 }

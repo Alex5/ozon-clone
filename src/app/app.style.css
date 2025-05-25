@@ -10,6 +10,9 @@
   --react-lavka-font-size-lg: 20px;
   --react-lavka-font-size-xl: 24px;
 
+  /* sizes */
+  --react-lavka-size-lg: 48px;
+
   /* Отступы */
   --react-lavka-spacing-xs: 4px;
   --react-lavka-spacing-sm: 8px;
@@ -26,7 +29,7 @@
 
   /* Тени */
   --react-lavka-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --react-lavka-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --react-lavka-shadow-md: 0 2px 5px rgba(0,0,0,.1);
   --react-lavka-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
 
   /* z-index */

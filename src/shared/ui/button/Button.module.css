@@ -1,5 +1,7 @@
-
-
-.size-icon{
-    padding: 24px;
+.button {
+  display: flex;
+  align-items: center;
+  border: unset;
+  padding: 0 12px 0 12px;
+  justify-content: center;
 }

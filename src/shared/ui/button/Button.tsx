@@ -6,17 +6,14 @@ import type { ButtonHTMLAttributes, DetailedHTMLProps } from "react";
 
 import { baseVariants } from "../base-variants";
 
-const button = cva("button", {
+const button = cva(styles.button, {
   variants: {
     ...baseVariants,
-    variant: {
-      solid: "",
-      outline: "mb-",
-    },
-
-    size: {
-      icon: styles["size-icon"],
-    },
+  },
+  defaultVariants: {
+    colorPallete: "gray",
+    shadow: "md",
+    size: "lg",
   },
 });
 
@@ -28,12 +25,17 @@ type ButtonProps = DetailedHTMLProps<
 
 export function Button({
   children,
-  variant,
   colorPallete,
+  size,
+  radius,
+  shadow,
   ...rest
 }: ButtonProps) {
   return (
-    <button className={button({ variant, colorPallete })} {...rest}>
+    <button
+      className={button({ colorPallete, size, radius, shadow })}
+      {...rest}
+    >
       {children}
     </button>
   );
