@@ -1,0 +1,5 @@
+.color-pallete-yellow {
+  background-color: var(--react-lavka-color-primary);
+  border-color: var(--react-lavka-color-primary);
+  /* color: var(--react-lavka-color-primary); */
+}

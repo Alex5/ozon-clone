@@ -5,7 +5,7 @@ import { Image } from "../../../shared/ui/image/Image";
 import { Text } from "@shared/ui/text/Text";
 import { NewBadge } from "./ui/NewBadge";
 
-import classes from "./product-card.module.css";
+import { Button } from "@shared/ui/button/Button";
 
 export function ProductCard({ product }: { product: ProductType }) {
   const imageSrc = product.snippetImage.url
@@ -15,22 +15,14 @@ export function ProductCard({ product }: { product: ProductType }) {
   return (
     <Card>
       <div style={{ position: "relative" }}>
-        <Image src={imageSrc} aspectRatio={"1 / 1"} className={classes.image} />
+        <Image src={imageSrc} aspectRatio={"1 / 1"} />
         <Float placement="bottom-start">
           <NewBadge />
         </Float>
         <Float placement="bottom-end">
-          <button
-            style={{
-              padding: "12px",
-              borderRadius: "24px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
+          <Button colorPallete="yellow" size="icon">
             +
-          </button>
+          </Button>
         </Float>
       </div>
       <Text size="md">

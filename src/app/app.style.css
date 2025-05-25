@@ -1,53 +1,37 @@
-/* CSS Reset */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+:root {
+  /* Цвета */
+  --react-lavka-color-primary: #fce000;
 
-html,
-body {
-  height: 100%;
-  font-family: sans-serif;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  /* Типографика */
+  --react-lavka-font-family: "Inter", sans-serif;
+  --react-lavka-font-size-xs: 12px;
+  --react-lavka-font-size-sm: 14px;
+  --react-lavka-font-size-md: 16px;
+  --react-lavka-font-size-lg: 20px;
+  --react-lavka-font-size-xl: 24px;
 
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+  /* Отступы */
+  --react-lavka-spacing-xs: 4px;
+  --react-lavka-spacing-sm: 8px;
+  --react-lavka-spacing-md: 16px;
+  --react-lavka-spacing-lg: 24px;
+  --react-lavka-spacing-xl: 32px;
 
-button,
-input,
-textarea,
-select {
-  font: inherit;
-  color: inherit;
-  background: none;
-  border: none;
-  outline: none;
-}
+  /* Радиусы */
+  --react-lavka-radius-sm: 4px;
+  --react-lavka-radius-md: 8px;
+  --react-lavka-radius-lg: 16px;
+  --react-lavka-radius-xl: 32px;
+  --react-lavka-radius-round: 50%;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+  /* Тени */
+  --react-lavka-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --react-lavka-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --react-lavka-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
 
-ul,
-ol {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+  /* z-index */
+  --react-lavka-z-index-dropdown: 1000;
+  --react-lavka-z-index-sticky: 1020;
+  --react-lavka-z-index-modal: 1050;
+  --react-lavka-z-index-toast: 1100;
 }
