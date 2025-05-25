@@ -6,7 +6,7 @@ export function Grid({ children }: { children: ReactNode }) {
       style={{
         display: "grid",
         gridTemplateColumns: "1fr 1fr 1fr 1fr",
-        gap: "10px",
+        gap: "20px",
       }}
     >
       {children}

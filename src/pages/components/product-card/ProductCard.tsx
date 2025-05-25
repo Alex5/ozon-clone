@@ -45,7 +45,6 @@ export function ProductCard({ product }: { product: ProductType }) {
         }).format(product.pricing.price)}
       </Text>
       <Text size="sm">{product.title}</Text>
-      <Button colorPallete="yellow">В корзину</Button>
     </Card>
   );
 }
