@@ -18,8 +18,19 @@
   height: var(--react-lavka-size-lg);
 }
 
-.rounded-full {
-  border-radius: var(--react-lavka-size-lg);
+.radius-rounded {
+  border-radius: var(--react-lavka-radius-round);
+}
+
+.radius-lg {
+  border-radius: var(--react-lavka-radius-lg);
+}
+
+.radius-md {
+  border-radius: var(--react-lavka-radius-md);
+}
+.radius-xl {
+  border-radius: var(--react-lavka-radius-xl);
 }
 
 .shadow-md {

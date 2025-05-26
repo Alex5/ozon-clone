@@ -12,9 +12,12 @@ export const baseVariants = {
     lg: styles["size-lg"],
   },
   radius: {
-    rounded: styles["rounded-full"],
+    md: styles["radius-md"],
+    lg: styles["radius-lg"],
+    xl: styles["radius-xl"],
+    rounded: styles["radius-rounded"],
   },
   shadow: {
-    md: styles['shadow-md']
-  }
+    md: styles["shadow-md"],
+  },
 } as const;

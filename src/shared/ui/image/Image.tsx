@@ -1,19 +1,28 @@
 import type { DetailedHTMLProps } from "react";
-import classes from "./Image.module.css";
+import type { VariantProps } from "class-variance-authority";
+import { imageVariants } from "./image-variants";
 
 type BaseImageProps = {
   aspectRatio: string;
 } & DetailedHTMLProps<
   React.ImgHTMLAttributes<HTMLImageElement>,
   HTMLImageElement
->;
+> &
+  VariantProps<typeof imageVariants>;
 
-export function Image({ aspectRatio, src, ...rest }: BaseImageProps) {
+export function Image({
+  aspectRatio,
+  src,
+  radius,
+  variant,
+  colorPallete,
+  ...rest
+}: BaseImageProps) {
   return (
     <img
       src={src}
       style={{ aspectRatio }}
-      className={classes.image}
+      className={imageVariants({ radius, variant, colorPallete })}
       {...rest}
     />
   );
