@@ -7,7 +7,7 @@
 .color-pallete-yellow {
   background-color: var(--react-lavka-color-primary);
   border-color: var(--react-lavka-color-primary);
-  color: white;
+  color: var(--react-lavka-color-primary);
 }
 
 .variant-outline {

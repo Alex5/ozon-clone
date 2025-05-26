@@ -3,5 +3,10 @@ import styles from "./Image.module.css";
 import { baseVariants } from "../base-variants";
 
 export const imageVariants = cva(styles.image, {
-  variants: { ...baseVariants },
+  variants: {
+    ...baseVariants,
+    pointers: {
+      cursor: styles["image-pointer"],
+    },
+  },
 });

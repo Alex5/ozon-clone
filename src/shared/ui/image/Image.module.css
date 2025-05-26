@@ -5,3 +5,14 @@
   display: block;
   max-width: 100%;
 }
+
+.image:hover {
+  /* background-color: rgba(0, 0, 0, 0.176); */
+  filter: brightness(90%);
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.image-pointer {
+  cursor: pointer;
+}

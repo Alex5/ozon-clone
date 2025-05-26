@@ -15,7 +15,12 @@ export function ProductCard({ product }: { product: ProductType }) {
   return (
     <Card>
       <div style={{ position: "relative" }}>
-        <Image src={imageSrc} aspectRatio={"1 / 1"} radius="xl" />
+        <Image
+          onClick={() => null}
+          src={imageSrc}
+          aspectRatio={"1 / 1"}
+          radius="xl"
+        />
         <Float placement="bottom-start">
           <NewBadge />
         </Float>
