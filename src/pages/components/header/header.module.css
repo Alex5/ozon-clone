@@ -1,5 +1,16 @@
 .header {
-  padding: 16px 24px;
   box-shadow: var(--react-lavka-shadow-header);
   margin-bottom: var(--react-lavka-margin-header);
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 20;
+  left: 0;
+  height: 80px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
 }

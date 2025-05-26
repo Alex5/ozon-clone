@@ -1,3 +1,7 @@
+body {
+  margin: unset;
+}
+
 :root {
   /* Цвета */
   --react-lavka-color-primary: #fce000;
