@@ -19,7 +19,7 @@
 }
 
 .image:hover::after {
-  opacity: 0.15;
+  opacity: 0.10;
 }
 
 .image {

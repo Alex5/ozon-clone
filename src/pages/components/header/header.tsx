@@ -4,7 +4,7 @@ export function Header() {
   return (
     <header className={styles.header}>
       <div className={styles["header-content"]}>
-        <span>react lavka</span>
+        <span className={styles["header-logo"]}>Реакт ♡ Лавка</span>
       </div>
     </header>
   );
