@@ -7,20 +7,19 @@ import { NewBadge } from "./ui/NewBadge";
 
 import { Button } from "@shared/ui/button/Button";
 
+import styles from "./product-card.module.css";
+
 export function ProductCard({ product }: { product: ProductType }) {
   const imageSrc = product.snippetImage.url
     .replace("{w}", "600")
     .replace("{h}", "600");
 
   return (
-    <Card>
+    <Card className={styles.container}>
       <div style={{ position: "relative" }}>
-        <Image
-          onClick={() => null}
-          src={imageSrc}
-          aspectRatio={"1 / 1"}
-          radius="xl"
-        />
+        <div className={styles.image}>
+          <Image onClick={() => null} src={imageSrc} radius="xl" />
+        </div>
         <Float placement="bottom-start">
           <NewBadge />
         </Float>

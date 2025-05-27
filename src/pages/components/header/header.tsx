@@ -4,7 +4,7 @@ export function Header() {
   return (
     <header className={styles.header}>
       <div className={styles["header-content"]}>
-        {/* <img src="./full-logo.svg" alt="" /> */}
+        <span>react lavka</span>
       </div>
     </header>
   );

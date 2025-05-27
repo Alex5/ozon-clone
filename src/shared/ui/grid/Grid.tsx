@@ -5,7 +5,7 @@ export function Grid({ children }: { children: ReactNode }) {
     <div
       style={{
         display: "grid",
-        gridTemplateColumns: "1fr 1fr 1fr 1fr",
+        gridTemplateColumns: "repeat(4, 1fr)",
         gap: "20px",
       }}
     >

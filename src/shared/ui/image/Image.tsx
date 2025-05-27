@@ -3,7 +3,7 @@ import type { VariantProps } from "class-variance-authority";
 import { imageVariants } from "./image-variants";
 
 type BaseImageProps = {
-  aspectRatio: string;
+  aspectRatio?: string;
 } & DetailedHTMLProps<
   React.ImgHTMLAttributes<HTMLImageElement>,
   HTMLImageElement
