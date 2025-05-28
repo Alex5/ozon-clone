@@ -6,7 +6,7 @@
   background-color: white;
   z-index: 20;
   left: 0;
-  height: 80px;
+  height: var(--react-lavka-header-height);
   display: flex;
 }
 

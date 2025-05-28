@@ -42,8 +42,12 @@
   /* margins */
   --react-lavka-margin-header: 20px;
 
+  /* height */
+  --react-lavka-header-height: 80px;
+
   /* width */
   --react-lavka-catalog-wrapper-width: 268px;
+  --react-lavka-cart-sidebar-width: 320px;
 }
 
 html,

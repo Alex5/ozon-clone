@@ -1,21 +1,12 @@
-import type { ReactNode } from "react";
-import classes from "./Text.module.css";
+import { text, type TextVariants } from "./text.cva";
 
-export function Text({
-  children,
-  size,
-  palette,
-}: {
-  children: ReactNode;
-  size: "sm" | "md";
-  palette?: "red";
-}) {
+interface TextProps
+  extends React.HTMLAttributes<HTMLSpanElement>,
+    TextVariants {}
+
+export function Text({ children, textStyle, fontWeight, ...props }: TextProps) {
   return (
-    <span
-      className={classes.Text}
-      data-ui-size={size}
-      data-ui-palette={palette}
-    >
+    <span className={text({ textStyle, fontWeight })} {...props}>
       {children}
     </span>
   );

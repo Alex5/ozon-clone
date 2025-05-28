@@ -1,18 +1,15 @@
-import type { ProductType } from "../../../shared/api/hooks/use-products/types";
-import { Card } from "../../../shared/ui/card/Card";
-import { Float } from "../../../shared/ui/float/Float";
-import { Image } from "../../../shared/ui/image/Image";
+import type { ProductType } from "@shared/api/hooks/use-products/types";
+import { Card } from "@shared/ui/card/Card";
+import { Float } from "@shared/ui/float/Float";
+import { Image } from "@shared/ui/image/Image";
 import { Text } from "@shared/ui/text/Text";
-import { NewBadge } from "./ui/NewBadge";
-
 import { Button } from "@shared/ui/button/Button";
 
 import styles from "./product-card.module.css";
+import { getImageUrl } from "@shared/services/dom.service";
 
 export function ProductCard({ product }: { product: ProductType }) {
-  const imageSrc = product.snippetImage.url
-    .replace("{w}", "600")
-    .replace("{h}", "600");
+  const imageSrc = getImageUrl(product.snippetImage.url, 600);
 
   return (
     <Card className={styles.container}>
@@ -20,11 +17,9 @@ export function ProductCard({ product }: { product: ProductType }) {
         <div className={styles.image}>
           <Image onClick={() => null} src={imageSrc} radius="xl" />
         </div>
-        <Float placement="bottom-start">
-          <NewBadge />
-        </Float>
         <Float placement="bottom-end">
           <Button size="lg" radius="rounded">
+            {/* @todo */}
             <svg
               width="24"
               height="24"
@@ -42,13 +37,10 @@ export function ProductCard({ product }: { product: ProductType }) {
           </Button>
         </Float>
       </div>
-      <Text size="md">
-        {new Intl.NumberFormat("ru-RU", {
-          style: "currency",
-          currency: "RUR",
-        }).format(product.pricing.price)}
+      <Text textStyle="md" fontWeight="medium">
+        {product.pricing.priceSigned}
       </Text>
-      <Text size="sm">{product.longTitle}</Text>
+      <Text textStyle="sm">{product.longTitle}</Text>
     </Card>
   );
 }

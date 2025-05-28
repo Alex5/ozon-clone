@@ -36,3 +36,7 @@ export function addLoaderToElement(element: Element) {
   element.appendChild(loader);
   return loader;
 }
+
+export function getImageUrl(url: string, size: number) {
+  return url.replace("{w}", `${size}`).replace("{h}", `${size}`);
+}

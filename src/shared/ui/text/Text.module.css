@@ -1,15 +1,45 @@
-.Text {
-  color: black;
+@import "./public/fonts/stylesheet.css";
+
+.text {
+  font-family: "Yandex Sans Text", sans-serif;
 }
 
-.Text[data-ui-size="sm"] {
+.xs {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.sm {
   font-size: 14px;
+  line-height: 20px;
 }
 
-.Text[data-ui-size="md"] {
+.md {
   font-size: 16px;
+  line-height: 24px;
 }
 
-.Text[data-ui-palette="red"] {
-  color: red;
+.lg {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 700;
 }

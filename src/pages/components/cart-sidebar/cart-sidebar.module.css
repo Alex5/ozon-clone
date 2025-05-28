@@ -1,0 +1,7 @@
+.cart-sidebar {
+  height: calc(94dvh - var(--react-lavka-header-height));
+  background-color: aliceblue;
+  position: sticky;
+  top: 100px;
+  min-width: var(--react-lavka-cart-sidebar-width);
+}
