@@ -1,9 +1,0 @@
-.container {
-  color: rgb(255, 255, 255);
-  background-color: rgb(255, 189, 8);
-  transform: rotate(-3deg);
-  transform-origin: bottom left;
-  border-radius: 12px;
-  box-shadow: 0 0 0 1.5px var(--theme-ever-front);
-  height: 24px;
-}
