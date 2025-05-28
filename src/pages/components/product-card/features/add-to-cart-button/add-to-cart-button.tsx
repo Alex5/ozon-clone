@@ -28,9 +28,9 @@ export function AddToCartButton({ product }: { product: ProductType }) {
     await mutate(cart);
   }
 
-  const cartCount = cart?.filter(
-    (cartItem) => cartItem.id === product.id
-  ).length;
+  const cartCount = cart?.find(
+    (cartItem) => cartItem.product.id === product.id
+  )?.quantity;
 
   return (
     <div

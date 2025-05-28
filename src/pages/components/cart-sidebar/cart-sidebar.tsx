@@ -15,8 +15,19 @@ export function CartSidebar() {
         15–25 мин, 119₽
       </Text>
       <ul className={styles["cart-sidebar-list"]}>
-        {cart?.map((cartItem) => (
-          <Text key={cartItem.id}>{cartItem.longTitle}</Text>
+        {cart?.map(({ product, quantity }) => (
+          <div
+            key={product.id}
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              gap: "20px",
+            }}
+          >
+            <Text>{product.longTitle}</Text>
+            <Text>{quantity}</Text>
+          </div>
         ))}
       </ul>
     </aside>
