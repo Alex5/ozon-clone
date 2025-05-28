@@ -1,6 +1,6 @@
-export async function enableMocking() {
-  const { worker } = await import("../../mocks/browser");
+import { worker } from "../../mocks/browser";
 
+export async function enableMocking() {
   const url = `${import.meta.env.BASE_URL}mockServiceWorker.js`;
 
   return worker.start({

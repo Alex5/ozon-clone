@@ -41,6 +41,9 @@
 
   /* margins */
   --react-lavka-margin-header: 20px;
+
+  /* width */
+  --react-lavka-catalog-wrapper-width: 268px;
 }
 
 html,

@@ -48,7 +48,7 @@ export function ProductCard({ product }: { product: ProductType }) {
           currency: "RUR",
         }).format(product.pricing.price)}
       </Text>
-      <Text size="sm">{product.title}</Text>
+      <Text size="sm">{product.longTitle}</Text>
     </Card>
   );
 }
