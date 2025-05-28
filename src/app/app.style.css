@@ -1,9 +1,10 @@
+@import "/fonts/stylesheet.css";
+
 :root {
   /* Цвета */
   --react-lavka-color-primary: #fce000;
 
   /* Типографика */
-  --react-lavka-font-family: "Inter", sans-serif;
   --react-lavka-font-size-xs: 12px;
   --react-lavka-font-size-sm: 14px;
   --react-lavka-font-size-md: 16px;

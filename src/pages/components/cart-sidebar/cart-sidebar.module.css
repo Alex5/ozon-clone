@@ -1,7 +1,15 @@
 .cart-sidebar {
-  height: calc(94dvh - var(--react-lavka-header-height));
-  background-color: aliceblue;
+  height: calc(88dvh - var(--react-lavka-header-height));
   position: sticky;
-  top: 100px;
+  top: 102px;
   min-width: var(--react-lavka-cart-sidebar-width);
+}
+
+.cart-sidebar-list {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  gap: 10px;
 }
