@@ -2,8 +2,8 @@
   height: calc(80dvh - var(--react-lavka-header-height));
   position: sticky;
   top: 102px;
-  min-width: var(--react-lavka-cart-sidebar-width);
-  padding-left: 20px;
+  max-width: var(--react-lavka-cart-sidebar-width);
+  width: 100%;
 }
 
 .cart-sidebar-list {
