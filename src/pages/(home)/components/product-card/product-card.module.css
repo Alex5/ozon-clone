@@ -6,8 +6,15 @@
 }
 
 .image {
-  border-radius: var(--react-lavka-radius-xl);
+  padding-bottom: 100%;
   width: 100%;
+}
+
+.image img {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--react-lavka-radius-xl);
+  background-color: whitesmoke;
 }
 
 .image::after {
@@ -24,6 +31,7 @@
   transition-duration: 0.15s;
   transition-property: opacity;
   transition-timing-function: ease-in-out;
+  border-radius: var(--react-lavka-radius-xl);
 }
 
 .image:hover::after {

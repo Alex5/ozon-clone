@@ -7,6 +7,7 @@ export function Grid({ children }: { children: ReactNode }) {
         display: "grid",
         gridTemplateColumns: "repeat(4, 1fr)",
         gap: "20px",
+        width: "100%",
       }}
     >
       {children}
