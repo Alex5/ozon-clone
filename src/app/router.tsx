@@ -4,31 +4,34 @@ import {
 } from "react-router";
 import { CartPage } from "../pages/cart/page";
 import { ProductPage } from "../pages/product/page";
-import { RootPageLayout } from "../pages/layout";
-import { RootPage } from "../pages/page";
+import { RootPageLayout } from "@home/layout";
+import { RootPage } from "@home/page";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      Component: RootPageLayout,
+      children: [
+        {
+          index: true,
+          Component: RootPage,
+        },
+        {
+          path: "/cart",
+          Component: CartPage,
+        },
+        {
+          path: "/product/:productId",
+          Component: ProductPage,
+        },
+      ],
+    },
+  ],
   {
-    path: "/",
-    Component: RootPageLayout,
-    children: [
-      {
-        index: true,
-        Component: RootPage,
-      },
-      {
-        path: "/cart",
-        Component: CartPage,
-      },
-      {
-        path: "/product/:productId",
-        Component: ProductPage,
-      },
-    ],
-  },
-], {
-  basename: '/react-lavka'
-});
+    basename: "/react-lavka",
+  }
+);
 
 export function RouterProvider() {
   return <ReactRouterProvider router={router} />;
