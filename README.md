@@ -1,5 +1,5 @@
-<div style="background: white; display: inline-flex; padding: 8px; border-radius: 8px; width: 100%; justify-content: center; margin-bottom: 10px">
-  <img src="./public//react_lavka_full_logo.svg" alt="React Lavka Logo" width="200" />
+<div style="display: inline-flex; padding: 8px; border-radius: 8px; width: 100%; justify-content: center; margin-bottom: 10px">
+  <img src="./public//react_lavka_full_logo.svg" alt="React Lavka Logo" width="200" style="background: white; display: inline-flex; padding: 10px 16px; border-radius: 16px"/>
 </div>
 
 **React Lavka** — это веб-приложение, построенное на базе React 19, Vite и SWR, с модульной архитектурой и современными практиками разработки.
