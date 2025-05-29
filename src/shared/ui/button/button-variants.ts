@@ -9,7 +9,7 @@ export const buttonVariants = cva(styles.button, {
     ...baseVariants,
   },
   defaultVariants: {
-    colorPallete: "gray",
+    colorPallete: "yellow",
     shadow: "md",
     size: "lg",
   },

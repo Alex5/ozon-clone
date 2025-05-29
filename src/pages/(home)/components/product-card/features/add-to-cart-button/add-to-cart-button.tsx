@@ -44,7 +44,13 @@ export function AddToCartButton({ product }: { product: ProductType }) {
       }}
     >
       {cartCount ? (
-        <Button onClick={() => removeFromCart(product)} radius="xl" size="lg">
+        <Button
+          onClick={() => removeFromCart(product)}
+          radius="xl"
+          size="lg"
+          shadow="none"
+          colorPallete="gray"
+        >
           <svg
             className="i1rjkic7"
             width="24"
@@ -63,8 +69,13 @@ export function AddToCartButton({ product }: { product: ProductType }) {
         </Button>
       ) : null}
       {cartCount ? <Text fontWeight="medium">{cartCount}</Text> : null}
-      <Button onClick={() => addToCart(product)} size="lg" radius="rounded">
-        {/* @todo вынести в icons */}
+      <Button
+        onClick={() => addToCart(product)}
+        size="lg"
+        radius="rounded"
+        shadow="none"
+        colorPallete="gray"
+      >
         <svg
           width="24"
           height="24"

@@ -1,4 +1,3 @@
-import "../public/fonts/stylesheet.css";
 import "./app/app.style.css";
 
 import { StrictMode } from "react";

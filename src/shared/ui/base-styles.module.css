@@ -7,7 +7,7 @@
 .color-pallete-yellow {
   background-color: var(--react-lavka-color-primary);
   border-color: var(--react-lavka-color-primary);
-  color: var(--react-lavka-color-primary);
+  color: black;
 }
 
 .variant-outline {
@@ -35,4 +35,8 @@
 
 .shadow-md {
   box-shadow: var(--react-lavka-shadow-md);
+}
+
+.shadow-none {
+  box-shadow: unset;
 }

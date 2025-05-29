@@ -1,9 +1,15 @@
 import { Text } from "@shared/ui/text/Text";
 import styles from "./cart-sidebar.module.css";
 import { useCart } from "@shared/api/hooks/use-cart/use-cart";
+import { Button } from "@shared/ui/button/Button";
 
 export function CartSidebar() {
   const { cart } = useCart();
+
+  const total = cart?.reduce(
+    (acc, prev) => (acc += prev.product.currentPrice * prev.quantity),
+    0
+  );
 
   return (
     <aside className={styles["cart-sidebar"]}>
@@ -12,7 +18,7 @@ export function CartSidebar() {
         fontWeight="medium"
         style={{ display: "block", marginBottom: "20px" }}
       >
-        15–25 мин, 119₽
+        15–25 мин, 0-119
       </Text>
       <ul className={styles["cart-sidebar-list"]}>
         {cart?.map(({ product, quantity }) => (
@@ -30,6 +36,17 @@ export function CartSidebar() {
           </div>
         ))}
       </ul>
+      <Button radius="lg" style={{ width: "100%" }}>
+        <Text fontWeight="medium">
+          {total
+            ? "В корзину " +
+              new Intl.NumberFormat("ru-RU", {
+                currency: "RUB",
+                style: "currency",
+              }).format(total)
+            : "Добавьте что-нибудь"}
+        </Text>
+      </Button>
     </aside>
   );
 }
