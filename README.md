@@ -1,54 +1,38 @@
-# React + TypeScript + Vite
+# 🛒 React Lavka
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**React Lavka** — это веб-приложение, построенное на базе React 19, Vite и SWR, с модульной архитектурой и современными практиками разработки.
 
-Currently, two official plugins are available:
+## 🚀 Демо
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Открыть демо](https://alex5.github.io/react-lavka)
 
-## Expanding the ESLint configuration
+## 📦 Установка
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+git clone https://github.com/alex5/react-lavka.git
+cd react-lavka
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠 Скрипты
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- `npm run dev` — запуск приложения в режиме разработки
+- `npm run build` — сборка проекта с компиляцией TypeScript
+- `npm run preview` — предпросмотр собранного проекта
+- `npm run lint` — запуск линтинга с помощью ESLint
+        |
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🧱 Стек технологий
+
+- **React 19**
+- **React Router 7**
+- **SWR 2** — для работы с удалёнными данными
+- **Vite 6** — быстрый современный сборщик
+- **TypeScript**
+- **CSS Modules** (с поддержкой через `typescript-plugin-css-modules`)
+- **ESLint** — для анализа качества кода
+- **MSW** — для имитации API в процессе разработки
+
+## 🧪 Моки API
+
+Проект использует [Mock Service Worker (MSW)](https://mswjs.io/) для создания моков API. Каталог воркеров настроен на директорию `public/`.
