@@ -15,7 +15,12 @@ export function ProductCard({ product }: { product: ProductType }) {
     <Card className={styles.container}>
       <div style={{ position: "relative" }}>
         <div className={styles.image}>
-          <Image onClick={() => null} src={imageSrc} radius="xl" />
+          <Image
+            onClick={() => null}
+            src={imageSrc}
+            radius="xl"
+            loading="lazy"
+          />
         </div>
         <Float placement="bottom-end">
           <AddToCartButton product={product} />
