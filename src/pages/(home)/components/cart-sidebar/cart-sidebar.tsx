@@ -2,6 +2,7 @@ import { Text } from "@shared/ui/text/Text";
 import styles from "./cart-sidebar.module.css";
 import { useCart } from "@shared/api/hooks/use-cart/use-cart";
 import { Button } from "@shared/ui/button/Button";
+import { CartProduct } from "./components/cart-product/cart-product";
 
 export function CartSidebar() {
   const { cart } = useCart();
@@ -21,19 +22,8 @@ export function CartSidebar() {
         15–25 мин, 0-119
       </Text>
       <ul className={styles["cart-sidebar-list"]}>
-        {Array.from(cart.values())?.map(({ product, quantity }) => (
-          <div
-            key={product.id}
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              gap: "20px",
-            }}
-          >
-            <Text>{product.longTitle}</Text>
-            <Text>{quantity}</Text>
-          </div>
+        {Array.from(cart.values())?.map((cartItem) => (
+          <CartProduct key={cartItem.product.id} cartItem={cartItem} />
         ))}
       </ul>
       <Button radius="lg" style={{ width: "100%" }}>
