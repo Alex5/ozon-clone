@@ -2,35 +2,14 @@ import { useCart } from "@shared/api/hooks/use-cart/use-cart";
 import type { ProductType } from "@shared/api/hooks/use-products/types";
 import { Button } from "@shared/ui/button/Button";
 import { Text } from "@shared/ui/text/Text";
+import { useCartActions } from "./use-cart-actions";
 
 export function AddToCartButton({ product }: { product: ProductType }) {
-  const { cart, mutate } = useCart();
+  const { cart } = useCart();
 
-  async function addToCart(product: ProductType) {
-    const res = await fetch("/api/v1/cart", {
-      method: "POST",
-      body: JSON.stringify(product),
-    });
+  const { addToCart, removeFromCart } = useCartActions();
 
-    const cart = await res.json();
-
-    await mutate(cart);
-  }
-
-  async function removeFromCart(product: ProductType) {
-    const res = await fetch("/api/v1/cart", {
-      method: "DELETE",
-      body: JSON.stringify(product),
-    });
-
-    const cart = await res.json();
-
-    await mutate(cart);
-  }
-
-  const cartCount = cart?.find(
-    (cartItem) => cartItem.product.id === product.id
-  )?.quantity;
+  const { quantity } = cart.get(product.id) ?? {};
 
   return (
     <div
@@ -43,7 +22,7 @@ export function AddToCartButton({ product }: { product: ProductType }) {
         alignItems: "center",
       }}
     >
-      {cartCount ? (
+      {quantity ? (
         <Button
           onClick={() => removeFromCart(product)}
           radius="xl"
@@ -68,7 +47,7 @@ export function AddToCartButton({ product }: { product: ProductType }) {
           </svg>
         </Button>
       ) : null}
-      {cartCount ? <Text fontWeight="medium">{cartCount}</Text> : null}
+      {quantity ? <Text fontWeight="medium">{quantity}</Text> : null}
       <Button
         onClick={() => addToCart(product)}
         size="lg"
