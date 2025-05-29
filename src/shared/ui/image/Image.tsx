@@ -17,18 +17,22 @@ export function Image({
   variant,
   colorPallete,
   onClick,
+  className,
   ...rest
 }: BaseImageProps) {
   return (
     <img
       src={src}
       style={{ aspectRatio }}
-      className={imageVariants({
-        radius,
-        variant,
-        colorPallete,
-        pointers: onClick ? "cursor" : undefined,
-      })}
+      className={
+        `${className} ` +
+        imageVariants({
+          radius,
+          variant,
+          colorPallete,
+          pointers: onClick ? "cursor" : undefined,
+        })
+      }
       onClick={onClick}
       {...rest}
     />
