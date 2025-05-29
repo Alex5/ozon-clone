@@ -9,7 +9,7 @@ export type CartItem = {
   quantity: number;
 };
 
-const cart: CartItem[] = [];
+const cart = new Map<ProductType["id"], CartItem>();
 
 export const handlers = [
   http.get(`/api/v1/products`, () => {
@@ -17,36 +17,36 @@ export const handlers = [
   }),
 
   http.get(`/api/v1/cart`, () => {
-    return HttpResponse.json(cart);
+    return HttpResponse.json(Array.from(cart.values()));
   }),
 
   http.post(`/api/v1/cart`, async (req) => {
     const json = (await req.request.json()) as ProductType;
 
-    const existingItem = cart.find((item) => item.product.id === json.id);
+    const existing = cart.get(json.id);
 
-    if (existingItem) {
-      existingItem.quantity += 1;
+    if (existing) {
+      existing.quantity += 1;
     } else {
-      cart.push({ product: json, quantity: 1 });
+      cart.set(json.id, { product: json, quantity: 1 });
     }
 
-    return HttpResponse.json(cart, { status: 201 });
+    return HttpResponse.json(Array.from(cart.values()), { status: 201 });
   }),
 
-  http.delete(`/api/v1/cart`, async (req) => {
-    const json = (await req.request.json()) as ProductType;
+  http.delete<{ id: string }>(`/api/v1/cart/:id`, async ({ params }) => {
+    const { id } = params;
 
-    const index = cart.findIndex((item) => item.product.id === json.id);
+    const existing = cart.get(id);
 
-    if (index !== -1) {
-      if (cart[index].quantity > 1) {
-        cart[index].quantity -= 1;
+    if (existing) {
+      if (existing.quantity > 1) {
+        existing.quantity -= 1;
       } else {
-        cart.splice(index, 1);
+        cart.delete(id);
       }
     }
 
-    return HttpResponse.json(cart, { status: 200 });
+    return HttpResponse.json(Array.from(cart.values()), { status: 200 });
   }),
 ];

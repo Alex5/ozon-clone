@@ -6,7 +6,7 @@ import { Button } from "@shared/ui/button/Button";
 export function CartSidebar() {
   const { cart } = useCart();
 
-  const total = cart?.reduce(
+  const total = Array.from(cart.values())?.reduce(
     (acc, prev) => (acc += prev.product.currentPrice * prev.quantity),
     0
   );
@@ -21,7 +21,7 @@ export function CartSidebar() {
         15–25 мин, 0-119
       </Text>
       <ul className={styles["cart-sidebar-list"]}>
-        {cart?.map(({ product, quantity }) => (
+        {Array.from(cart.values())?.map(({ product, quantity }) => (
           <div
             key={product.id}
             style={{
