@@ -22,7 +22,7 @@ export function ProductCard({ product }: { product: ProductType }) {
         </Float>
       </div>
       <Text textStyle="md" fontWeight="medium">
-        {product.pricing.priceSigned}
+        {product.currentPriceSigned}
       </Text>
       <Text textStyle="sm">{product.longTitle}</Text>
     </Card>

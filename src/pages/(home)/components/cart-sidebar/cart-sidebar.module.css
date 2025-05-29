@@ -1,5 +1,5 @@
 .cart-sidebar {
-  height: calc(88dvh - var(--react-lavka-header-height));
+  height: calc(80dvh - var(--react-lavka-header-height));
   position: sticky;
   top: 102px;
   min-width: var(--react-lavka-cart-sidebar-width);

@@ -18,6 +18,7 @@ export const baseVariants = {
     rounded: styles["radius-rounded"],
   },
   shadow: {
+    none: styles["shadow-none"],
     md: styles["shadow-md"],
   },
 } as const;
