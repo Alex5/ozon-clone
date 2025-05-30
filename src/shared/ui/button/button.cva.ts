@@ -1,6 +1,6 @@
 import { cva } from "class-variance-authority";
 
-import styles from "./Button.module.css";
+import styles from "./button.module.css";
 
 import { baseVariants } from "../base-variants";
 

@@ -1,6 +1,6 @@
 import { useCart } from "@shared/api/hooks/use-cart/use-cart";
 import type { ProductType } from "@shared/api/hooks/use-products/types";
-import { Button } from "@shared/ui/button/Button";
+import { Button } from "@shared/ui/button/button";
 import { Text } from "@shared/ui/text/Text";
 import { useCartActions } from "./use-cart-actions";
 import { Div } from "@shared/ui/div/div";

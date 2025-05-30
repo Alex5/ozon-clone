@@ -1,7 +1,7 @@
 import { Text } from "@shared/ui/text/Text";
 import styles from "./cart-sidebar.module.css";
 import { useCart } from "@shared/api/hooks/use-cart/use-cart";
-import { Button } from "@shared/ui/button/Button";
+import { Button } from "@shared/ui/button/button";
 import { CartProduct } from "./components/cart-product/cart-product";
 
 export function CartSidebar() {

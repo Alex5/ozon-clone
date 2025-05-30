@@ -4,7 +4,7 @@ import { Image } from "@shared/ui/image/Image";
 import { getImageUrl } from "@shared/services/dom.service";
 
 import styles from "./cart-product.module.css";
-import { Button } from "@shared/ui/button/Button";
+import { Button } from "@shared/ui/button/button";
 import { useCartActions } from "@home/components/product-card/features/add-to-cart-button/use-cart-actions";
 
 type CartProductProps = {
