@@ -3,7 +3,6 @@ import {
   RouterProvider as ReactRouterProvider,
 } from "react-router";
 import { CartPage } from "../pages/cart/page";
-import { ProductPage } from "../pages/product/page";
 import { RootPageLayout } from "@home/layout";
 import { RootPage } from "@home/page";
 
@@ -20,10 +19,6 @@ const router = createBrowserRouter(
         {
           path: "/cart",
           Component: CartPage,
-        },
-        {
-          path: "/product/:productId",
-          Component: ProductPage,
         },
       ],
     },
