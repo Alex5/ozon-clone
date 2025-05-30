@@ -3,6 +3,7 @@ import type { ProductType } from "@shared/api/hooks/use-products/types";
 import { Button } from "@shared/ui/button/Button";
 import { Text } from "@shared/ui/text/Text";
 import { useCartActions } from "./use-cart-actions";
+import { Div } from "@shared/ui/div/div";
 
 export function AddToCartButton({ product }: { product: ProductType }) {
   const { cart } = useCart();
@@ -12,16 +13,7 @@ export function AddToCartButton({ product }: { product: ProductType }) {
   const { quantity } = cart.get(product.id) ?? {};
 
   return (
-    <div
-      style={{
-        display: "flex",
-        gap: "10px",
-        backgroundColor: "white",
-        borderRadius: "28px",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <Div flex justify-center align-center gap-2>
       {quantity ? (
         <Button
           onClick={() => removeFromCart(product)}
@@ -70,6 +62,6 @@ export function AddToCartButton({ product }: { product: ProductType }) {
           ></path>
         </svg>
       </Button>
-    </div>
+    </Div>
   );
 }

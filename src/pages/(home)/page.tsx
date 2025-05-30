@@ -1,11 +1,12 @@
+import { Div } from "@shared/ui/div/div";
 import { CartSidebar } from "./components/cart-sidebar/cart-sidebar";
 import { ProductList } from "./components/product-list/product-list";
 
 export function RootPage() {
   return (
-    <div style={{ display: "flex", gap: "20px" }}>
+    <Div flex gap-2>
       <ProductList />
       <CartSidebar />
-    </div>
+    </Div>
   );
 }
