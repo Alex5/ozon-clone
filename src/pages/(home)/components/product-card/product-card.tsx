@@ -1,6 +1,6 @@
 import type { ProductType } from "@shared/api/hooks/use-products/types";
-import { Card } from "@shared/ui/card/Card";
-import { Float } from "@shared/ui/float/Float";
+import { Card } from "@shared/ui/card/card";
+import { Float } from "@shared/ui/float/float";
 import { Image } from "@shared/ui/image/Image";
 import { Text } from "@shared/ui/text/Text";
 
