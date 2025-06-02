@@ -4,7 +4,7 @@ import { ProductList } from "./components/product-list/product-list";
 
 export function RootPage() {
   return (
-    <Div flex gap-2>
+    <Div flex gap4>
       <ProductList />
       <CartSidebar />
     </Div>

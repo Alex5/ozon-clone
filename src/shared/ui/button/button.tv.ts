@@ -1,10 +1,12 @@
-import { cva } from "class-variance-authority";
+import { tv } from "tailwind-variants";
 
 import styles from "./button.module.css";
 
-import { baseVariants } from "../base-variants";
+import { baseVariants } from "../base.variants";
 
-export const buttonVariants = cva(styles.button, {
+export const buttonStyles = tv({
+  base: styles.button,
+  extend: baseVariants,
   variants: {
     ...baseVariants,
   },

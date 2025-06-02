@@ -1,7 +1,10 @@
-import { cva, type VariantProps } from "class-variance-authority";
+import { tv, type VariantProps } from "tailwind-variants";
 import styles from "./Text.module.css";
+import { baseVariants } from "../base.variants";
 
-export const text = cva(styles.text, {
+export const text = tv({
+  base: styles.text,
+  extend: baseVariants,
   variants: {
     textStyle: {
       xs: styles.xs,

@@ -6,7 +6,7 @@ import { Text } from "@shared/ui/text/Text";
 
 import styles from "./product-card.module.css";
 import { getImageUrl } from "@shared/services/dom.service";
-import { AddToCartButton } from "./features/add-to-cart-button/add-to-cart-button";
+import { AddToCartButton } from "./components/add-to-cart-button";
 
 export function ProductCard({ product }: { product: ProductType }) {
   const imageSrc = getImageUrl(product.snippetImage.url, 600);

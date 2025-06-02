@@ -5,7 +5,7 @@ import { getImageUrl } from "@shared/services/dom.service";
 
 import styles from "./cart-product.module.css";
 import { Button } from "@shared/ui/button/button";
-import { useCartActions } from "@home/components/product-card/features/add-to-cart-button/use-cart-actions";
+import { useCartActions } from "@shared/api/hooks/use-cart/use-cart-actions";
 
 type CartProductProps = {
   cartItem: CartItem;

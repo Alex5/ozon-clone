@@ -1,13 +1,13 @@
-import { type VariantProps } from "class-variance-authority";
+import { type VariantProps } from "tailwind-variants";
 
 import type { ButtonHTMLAttributes, DetailedHTMLProps } from "react";
-import { buttonVariants } from "./button.cva";
+import { buttonStyles } from "./button.tv";
 
 type ButtonProps = DetailedHTMLProps<
   ButtonHTMLAttributes<HTMLButtonElement>,
   HTMLButtonElement
 > &
-  VariantProps<typeof buttonVariants>;
+  VariantProps<typeof buttonStyles>;
 
 export function Button({
   children,
@@ -19,7 +19,7 @@ export function Button({
 }: ButtonProps) {
   return (
     <button
-      className={buttonVariants({ colorPallete, size, radius, shadow })}
+      className={buttonStyles({ colorPallete, size, radius, shadow })}
       {...rest}
     >
       {children}
