@@ -1,4 +1,4 @@
-import { text, type TextVariants } from "./text.cva";
+import { text, type TextVariants } from "./text.tv";
 
 interface TextProps
   extends React.HTMLAttributes<HTMLSpanElement>,

@@ -1,25 +1,19 @@
-import type { DetailedHTMLProps, HTMLAttributes } from "react";
-import { type VariantProps } from "class-variance-authority";
-import { divCva } from "./div.cva";
+import { type DetailedHTMLProps, type HTMLAttributes } from "react";
+import { type VariantProps } from "tailwind-variants";
+import { divStyles } from "./div.tv";
+
+type VariantPropsType = VariantProps<typeof divStyles>;
 
 type DivProps = DetailedHTMLProps<
   HTMLAttributes<HTMLDivElement>,
   HTMLDivElement
 > &
-  VariantProps<typeof divCva>;
+  VariantPropsType;
 
-export function Div({
-  flex,
-  radius,
-  shadow,
-  size,
-  colorPallete,
-  ...rest
-}: DivProps) {
+export function Div(props: DivProps) {
   return (
-    <div
-      className={divCva({ flex, radius, shadow, size, colorPallete })}
-      {...rest}
-    ></div>
+    <div className={divStyles(props)} {...props}>
+      {props.children}
+    </div>
   );
 }

@@ -2,7 +2,7 @@ import { useCart } from "@shared/api/hooks/use-cart/use-cart";
 import type { ProductType } from "@shared/api/hooks/use-products/types";
 import { Button } from "@shared/ui/button/button";
 import { Text } from "@shared/ui/text/Text";
-import { useCartActions } from "./use-cart-actions";
+import { useCartActions } from "@shared/api/hooks/use-cart/use-cart-actions";
 import { Div } from "@shared/ui/div/div";
 
 export function AddToCartButton({ product }: { product: ProductType }) {
@@ -13,7 +13,7 @@ export function AddToCartButton({ product }: { product: ProductType }) {
   const { quantity } = cart.get(product.id) ?? {};
 
   return (
-    <Div flex justify-center align-center gap-2>
+    <Div flex radius="xl" colorPallete="gray" itemsCenter>
       {quantity ? (
         <Button
           onClick={() => removeFromCart(product)}
