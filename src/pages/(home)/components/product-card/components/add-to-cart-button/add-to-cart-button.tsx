@@ -25,6 +25,7 @@ export function AddToCartButton({ product }: { product: ProductType }) {
             style={{
               height: "inherit",
               padding: "12px",
+              backgroundColor: "transparent",
             }}
           >
             <svg width="24" height="24" viewBox="0 0 24 24">
@@ -37,10 +38,10 @@ export function AddToCartButton({ product }: { product: ProductType }) {
           <div
             style={{
               height: "100%",
-              paddingBottom: "2px",
-              paddingTop: "2px",
-              width: "100%",
-              display: "block",
+              width: "48px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
             <Text fontWeight="medium">{quantity ?? 0}</Text>
@@ -55,6 +56,7 @@ export function AddToCartButton({ product }: { product: ProductType }) {
             style={{
               height: "inherit",
               padding: "12px",
+              backgroundColor: "transparent",
             }}
           >
             <svg width="24" height="24" viewBox="0 0 24 24">

@@ -6,20 +6,13 @@
   position: relative;
   width: 48px;
   border-radius: 48px;
+  transition: width 0.2s ease;
 }
 
-.container-inner {
-  height: 48px;
-  position: relative;
+.container.open {
   width: 140px;
 }
 
-/* Анимация расширения */
-.container.open {
-  width: 140px; /* можно подогнать под контент */
-}
-
-/* Фон через before, чтобы не затрагивать содержимое */
 .container::before {
   border-radius: 48px;
   background-color: black;
@@ -32,21 +25,17 @@
   position: absolute;
   right: 0;
   top: 0;
-  transition-duration: 0.15s;
-  transition-property: opacity;
-  transition-timing-function: ease-in-out;
+  transition: opacity 0.2s ease-in-out, transform 0.3s ease-in-out; /* можно и transform добавить для красоты */
+  transform: scaleX(0.9); /* немного сжат в начале */
 }
 
-/* Контент сверху */
-.button,
-.count {
+.container.open::before {
+  transform: scaleX(1);
+}
+
+/* Внутренний контейнер */
+.container-inner {
+  height: 48px;
   position: relative;
-  z-index: 1;
-}
-
-.count {
-  margin: 0 8px;
-  white-space: nowrap;
-  min-width: 24px;
-  text-align: center;
+  width: 140px;
 }
