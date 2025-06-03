@@ -10,15 +10,19 @@ import { enableMocking } from "@shared/services/mock.service";
 prepareRoot().then((root) => {
   const loader = addLoaderToElement(root);
 
-  enableMocking().then(() => {
-    root.removeChild(loader);
+  enableMocking()
+    .catch((error) => {
+      console.error("enable mocking error: ", error);
+    })
+    .finally(() => {
+      root.removeChild(loader);
 
-    createRoot(root).render(
-      <StrictMode>
-        <SWRProvider>
-          <RouterProvider />
-        </SWRProvider>
-      </StrictMode>
-    );
-  });
+      createRoot(root).render(
+        <StrictMode>
+          <SWRProvider>
+            <RouterProvider />
+          </SWRProvider>
+        </StrictMode>
+      );
+    });
 });

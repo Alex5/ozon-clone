@@ -3,9 +3,9 @@ import type { CartItem } from "../../../../../../mocks/handlers";
 import { Image } from "@shared/ui/image/Image";
 import { getImageUrl } from "@shared/services/dom.service";
 
-import styles from "./cart-product.module.css";
 import { Button } from "@shared/ui/button/button";
 import { useCartActions } from "@shared/api/hooks/use-cart/use-cart-actions";
+import { Div } from "@shared/ui/div/div";
 
 type CartProductProps = {
   cartItem: CartItem;
@@ -16,32 +16,21 @@ export function CartProduct(props: CartProductProps) {
     cartItem: { product, quantity },
   } = props;
 
-  const { id, longTitle, snippetImage, currentPriceSigned } = product;
+  const { longTitle, snippetImage, currentPriceSigned } = product;
 
   const imageSrc = getImageUrl(snippetImage.url, 600);
 
   const { addToCart, removeFromCart } = useCartActions();
 
   return (
-    <div
-      key={id}
-      style={{
-        display: "flex",
-        alignItems: "center",
-        gap: "20px",
-      }}
-    >
-      <Image
-        src={imageSrc}
-        className={styles["cart-product-image"]}
-        radius="lg"
-      />
-      <div style={{ display: "flex", flexDirection: "column", width: "100%" }}>
-        <Text textStyle="sm">{longTitle}</Text>
+    <Div flex gap4 itemsCenter>
+      <Image src={imageSrc} radius="lg" h4 />
+      <Div flex flexCol gap2>
+        <Text textStyle="xs">{longTitle}</Text>
         <Text textStyle="sm" fontWeight="medium">
           {currentPriceSigned}
         </Text>
-      </div>
+      </Div>
       <div
         style={{
           display: "flex",
@@ -105,6 +94,6 @@ export function CartProduct(props: CartProductProps) {
           </svg>
         </Button>
       </div>
-    </div>
+    </Div>
   );
 }
