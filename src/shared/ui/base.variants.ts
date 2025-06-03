@@ -127,5 +127,17 @@ export const baseVariants = tv({
       true: styles["gap-4"],
       false: null,
     },
+    h4: {
+      true: styles.h4,
+      false: null,
+    },
+    h6: {
+      true: styles.h6,
+      false: null,
+    },
+    h8: {
+      true: styles.h8,
+      false: null,
+    },
   },
 });
