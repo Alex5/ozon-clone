@@ -1,6 +1,6 @@
 import { Text } from "@shared/ui/text/Text";
 import type { CartItem } from "../../../../../../mocks/handlers";
-import { Image } from "@shared/ui/image/Image";
+import { Image } from "@shared/ui/image/image.component";
 import { getImageUrl } from "@shared/services/dom.service";
 
 import { Button } from "@shared/ui/button/button";

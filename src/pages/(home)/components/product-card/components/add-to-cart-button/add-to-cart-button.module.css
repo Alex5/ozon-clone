@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  align-items: center;
+  border-radius: 48px;
+  background-color: white;
+  padding: 12px;
+  gap: 8px;
+}

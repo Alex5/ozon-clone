@@ -1,5 +1,5 @@
 import type { DetailedHTMLProps } from "react";
-import { type ImageStylesProps, imageStyles } from "./image.tv";
+import { type ImageStylesProps, imageStyles } from "./image.style";
 
 type BaseImageProps = {
   aspectRatio?: string;
