@@ -1,5 +1,5 @@
 import useSWR from "swr";
-import type { CartItem } from "../../../../mocks/handlers";
+import type { CartItem } from "@mocks/handlers";
 
 export function useCart() {
   const { data, ...rest } = useSWR<CartItem[]>("cart");
@@ -12,6 +12,7 @@ export function useCart() {
 
   return {
     cart,
+    data,
     ...rest,
   };
 }

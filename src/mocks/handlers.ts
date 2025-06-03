@@ -1,8 +1,6 @@
-// src/mocks/handlers.ts
 import { http, HttpResponse } from "msw";
 import products from "./products.json";
-
-type ProductType = (typeof products)[0];
+import type { ProductType } from "./types";
 
 export type CartItem = {
   product: ProductType;

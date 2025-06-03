@@ -1,6 +1,7 @@
 {
   "name": "react-lavka",
   "homepage": "https://alex5.github.io/react-lavka",
+  "repository": "https://github.com/Alex5/react-lavka",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -12,6 +13,7 @@
     "tree": "tree /f \"./src\" > tree.txt"
   },
   "dependencies": {
+    "lucide-react": "^0.511.0",
     "motion": "^12.16.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

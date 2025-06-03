@@ -1,7 +1,6 @@
 import { Text } from "@shared/ui/text/Text";
-import type { CartItem } from "../../../../../../mocks/handlers";
+import type { CartItem } from "@mocks/handlers";
 import { Image } from "@shared/ui/image/image.component";
-import { getImageUrl } from "@shared/services/dom.service";
 
 import { Button } from "@shared/ui/button/button";
 import { useCartActions } from "@shared/api/hooks/use-cart/use-cart-actions";
@@ -18,13 +17,11 @@ export function CartProduct(props: CartProductProps) {
 
   const { longTitle, snippetImage, currentPriceSigned } = product;
 
-  const imageSrc = getImageUrl(snippetImage.url, 600);
-
   const { addToCart, removeFromCart } = useCartActions();
 
   return (
     <Div flex gap4 itemsCenter>
-      <Image src={imageSrc} radius="lg" h4 />
+      <Image src={snippetImage.url} radius="lg" h4 />
       <Div flex flexCol gap2>
         <Text textStyle="xs">{longTitle}</Text>
         <Text textStyle="sm" fontWeight="medium">

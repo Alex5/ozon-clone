@@ -8,7 +8,8 @@
     "skipLibCheck": true,
     "paths": {
       "@shared/*": ["./src/shared/*"],
-      "@home/*": ["./src/pages/(home)/*"]
+      "@home/*": ["./src/pages/(home)/*"],
+      "@mocks/*": ["./src/mocks/*"]
     },
     /* Bundler mode */
     "moduleResolution": "bundler",
