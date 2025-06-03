@@ -1,4 +1,4 @@
-import type { ProductType } from "./types";
+import type { ProductType } from "@mocks/types";
 import useSWRImmutable from "swr/immutable";
 
 export function useProducts() {
