@@ -11,14 +11,16 @@ export function ProductCard({ product }: { product: ProductType }) {
   return (
     <Card className={styles.container}>
       <div style={{ position: "relative" }}>
-        <Image
-          onClick={() => null}
-          src={product.snippetImage.url}
-          radius="xl"
-          loading="lazy"
-          aspectRatio="1 / 1"
-          // size="lg"
-        />
+        <div className={styles.image}>
+          <Image
+            onClick={() => null}
+            src={product.snippetImage.url}
+            radius="xl"
+            loading="lazy"
+            aspectRatio="1 / 1"
+          />
+        </div>
+
         <Float placement="bottom-end">
           <AddToCartButton product={product} />
         </Float>

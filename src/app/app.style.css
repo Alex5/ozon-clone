@@ -1,13 +1,6 @@
 @import "/fonts/stylesheet.css";
 
 :root {
-  --is-desktop: {
-    @media screen and (min-width: 800px) {
-      .grid {
-        grid-template-columns: repeat(4, 1fr);
-      }
-    }
-  }
   /* Цвета */
   --react-lavka-color-primary: #fce000;
 

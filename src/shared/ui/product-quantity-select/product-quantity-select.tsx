@@ -38,12 +38,14 @@ export const ProductQuantitySelector = ({
       <div
         style={{
           display: "flex",
-          width: "100px",
+          maxWidth: "80px",
+          width: "100%",
           alignItems: "center",
           gap: "4px",
           backgroundColor: "rgba(101,92,78,.1)",
           borderRadius: "12px",
           height: "32px",
+          justifyContent: "space-around",
         }}
       >
         {children}
@@ -67,6 +69,7 @@ const Increment = ({
         onIncrement?.(quantity + 1);
       }}
       shadow="none"
+      size="icon"
       style={{
         backgroundColor: "transparent",
         borderRadius: "inherit",
@@ -111,6 +114,7 @@ const Decrement = ({
         borderRadius: "inherit",
         height: "inherit",
       }}
+      size="icon"
     >
       <svg
         width="16"
