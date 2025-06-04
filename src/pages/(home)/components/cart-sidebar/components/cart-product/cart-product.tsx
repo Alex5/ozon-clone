@@ -21,7 +21,13 @@ export function CartProduct(props: CartProductProps) {
 
   return (
     <Div flex gap4 itemsCenter>
-      <Image src={snippetImage.url} radius="lg" h4 />
+      <Image
+        src={snippetImage.url}
+        radius="lg"
+        h4
+        aspectRatio="1 / 1"
+        style={{ flex: 1, width: "100%" }}
+      />
       <Div flex flexCol gap2>
         <Text textStyle="xs">{longTitle}</Text>
         <Text textStyle="sm" fontWeight="medium">

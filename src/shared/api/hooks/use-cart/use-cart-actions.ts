@@ -3,26 +3,6 @@ import { fetcher } from "@shared/api/fetcher";
 import { useCart } from "@shared/api/hooks/use-cart/use-cart";
 import type { ProductType } from "@mocks/types";
 
-type CartMethod = "POST" | "DELETE";
-
-type CartCommand = {
-  method: CartMethod;
-  getUrl: (product: ProductType) => string;
-  getBody?: (product: ProductType) => BodyInit | null;
-};
-
-const cartCommands: Record<CartMethod, CartCommand> = {
-  POST: {
-    method: "POST",
-    getUrl: () => `/api/v1/cart`,
-    getBody: (product) => JSON.stringify(product),
-  },
-  DELETE: {
-    method: "DELETE",
-    getUrl: (product) => `/api/v1/cart/${product.id}`,
-  },
-};
-
 export function useCartActions() {
   const { cart, mutate } = useCart();
 
@@ -52,34 +32,38 @@ export function useCartActions() {
     }
   }
 
-  const handleCartAction = async (
-    method: CartMethod,
-    product: ProductType
-  ): Promise<void> => {
-    const { getUrl, getBody } = cartCommands[method];
+  async function handleRemoveProductFromCart(product: ProductType) {
+    const cartItem = cart.get(product.id);
 
-    const res = await fetch(getUrl(product), {
-      method,
-      headers: {
-        "Content-Type": "application/json",
-      },
-      ...(getBody ? { body: getBody(product) } : {}),
-    });
+    let cartItems = Array.from(cart.values()) ?? [];
 
-    if (!res.ok) {
-      console.error(`Cart ${method} failed`, await res.text());
-
-      return;
+    if (cartItem) {
+      cartItems = cartItems.map((cartItem) =>
+        cartItem.product.id === product.id
+          ? { ...cartItem, quantity: cartItem.quantity - 1 }
+          : cartItem
+      );
     }
 
-    const cart = await res.json();
-
-    await mutate(cart, { populateCache: cart, revalidate: false });
-  };
+    try {
+      await mutate(
+        fetcher(`cart/${product.id}`, {
+          method: "DELETE",
+        }),
+        {
+          optimisticData: cartItems,
+          rollbackOnError: true,
+          populateCache: true,
+          revalidate: false,
+        }
+      );
+    } catch (error) {
+      console.error(error);
+    }
+  }
 
   return {
     addToCart: handleAddProductToCart,
-    removeFromCart: (product: ProductType) =>
-      handleCartAction("DELETE", product),
+    removeFromCart: handleRemoveProductFromCart,
   };
 }
