@@ -9,24 +9,23 @@ export function useCartActions() {
   async function handleAddProductToCart(product: ProductType) {
     const cartItem: CartItem = {
       product,
-      quantity: cart.get(product.id)?.quantity ?? 1,
+      quantity: (cart.get(product.id)?.quantity ?? 0) + 1,
     };
 
-    const cartItems = [...(Array.from(cart.values()) ?? []), cartItem];
+    async function addProduct(product: ProductType): Promise<CartItem[]> {
+      return await fetcher("cart", {
+        method: "POST",
+        body: JSON.stringify(product),
+      });
+    }
 
     try {
-      await mutate(
-        fetcher("cart", {
-          method: "POST",
-          body: JSON.stringify(product),
-        }),
-        {
-          optimisticData: cartItems,
-          rollbackOnError: true,
-          populateCache: true,
-          revalidate: false,
-        }
-      );
+      await mutate(addProduct(product), {
+        optimisticData: [...(Array.from(cart.values()) ?? []), cartItem],
+        rollbackOnError: true,
+        populateCache: true,
+        revalidate: false,
+      });
     } catch (error) {
       console.error(error);
     }

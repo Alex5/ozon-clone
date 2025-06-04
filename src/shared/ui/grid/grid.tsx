@@ -1,16 +1,7 @@
 import type { ReactNode } from "react";
 
+import styles from "./grid.module.css";
+
 export function Grid({ children }: { children: ReactNode }) {
-  return (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(4, 1fr)",
-        gap: "20px",
-        width: "100%",
-      }}
-    >
-      {children}
-    </div>
-  );
+  return <section className={styles.grid}>{children}</section>;
 }

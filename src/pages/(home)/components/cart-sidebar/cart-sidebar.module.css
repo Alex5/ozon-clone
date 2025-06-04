@@ -4,6 +4,13 @@
   top: 102px;
   max-width: var(--react-lavka-cart-sidebar-width);
   width: 100%;
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .cart-sidebar {
+    display: block;
+  }
 }
 
 .cart-sidebar-list {
