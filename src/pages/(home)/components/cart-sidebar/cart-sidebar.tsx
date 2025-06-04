@@ -3,6 +3,7 @@ import styles from "./cart-sidebar.module.css";
 import { useCart } from "@shared/api/hooks/use-cart/use-cart";
 import { Button } from "@shared/ui/button/button";
 import { CartProduct } from "./components/cart-product/cart-product";
+import { Link } from "react-router";
 
 export function CartSidebar() {
   const { cart } = useCart();
@@ -26,17 +27,19 @@ export function CartSidebar() {
           <CartProduct key={cartItem.product.id} cartItem={cartItem} />
         ))}
       </ul>
-      <Button radius="lg" style={{ width: "100%" }}>
-        <Text fontWeight="medium">
-          {total
-            ? "В корзину " +
-              new Intl.NumberFormat("ru-RU", {
-                currency: "RUB",
-                style: "currency",
-              }).format(total)
-            : "Добавьте что-нибудь"}
-        </Text>
-      </Button>
+      <Link to="/cart" style={{ textDecoration: "none" }}>
+        <Button radius="lg" style={{ width: "100%" }}>
+          <Text fontWeight="medium">
+            {total
+              ? "В корзину " +
+                new Intl.NumberFormat("ru-RU", {
+                  currency: "RUB",
+                  style: "currency",
+                }).format(total)
+              : "Добавьте что-нибудь"}
+          </Text>
+        </Button>
+      </Link>
     </aside>
   );
 }

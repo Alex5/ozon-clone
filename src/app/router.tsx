@@ -5,6 +5,7 @@ import {
 import { CartPage } from "../pages/cart/page";
 import { RootPageLayout } from "@home/layout";
 import { RootPage } from "@home/page";
+import { ProductPage } from "../pages/product/page";
 
 const router = createBrowserRouter(
   [
@@ -19,6 +20,10 @@ const router = createBrowserRouter(
         {
           path: "/cart",
           Component: CartPage,
+        },
+        {
+          path: "/product/:productId",
+          Component: ProductPage,
         },
       ],
     },
