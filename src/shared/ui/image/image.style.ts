@@ -1,5 +1,6 @@
 import { tv, type VariantProps } from "tailwind-variants";
 import { baseVariants } from "../base.variants";
+
 import styles from "./image.module.css";
 
 export const imageStyles = tv({
