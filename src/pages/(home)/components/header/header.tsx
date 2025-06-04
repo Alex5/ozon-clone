@@ -15,7 +15,7 @@ export function Header() {
         />
         <Div>
           <a href={repository} target="_blank">
-            <Button size="icon" colorPallete="gray">
+            <Button colorPallete="gray" radius="lg">
               <Github />
             </Button>
           </a>
