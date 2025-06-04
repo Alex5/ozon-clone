@@ -13,6 +13,8 @@ export function CartSidebar() {
     0
   );
 
+  const cartItems = Array.from(cart.values());
+
   return (
     <aside className={styles["cart-sidebar"]}>
       <Text
@@ -22,11 +24,35 @@ export function CartSidebar() {
       >
         15–25 мин, 0-119
       </Text>
-      <ul className={styles["cart-sidebar-list"]}>
-        {Array.from(cart.values())?.map((cartItem) => (
-          <CartProduct key={cartItem.product.id} cartItem={cartItem} />
-        ))}
-      </ul>
+      {cartItems.length === 0 ? (
+        <div
+          style={{
+            height: "100%",
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+            gap: 20,
+            alignItems: "center",
+          }}
+        >
+          <img
+            src="https://yastatic.net/s3/lavka-web/public/assets/images/CategoryUnavailable@2x.png"
+            alt=""
+            width="100%"
+          />
+          <Text>
+            В корзине пока ничего нет. <br />
+            Самое время наполнять её!
+          </Text>
+        </div>
+      ) : (
+        <ul className={styles["cart-sidebar-list"]}>
+          {cartItems?.map((cartItem) => (
+            <CartProduct key={cartItem.product.id} cartItem={cartItem} />
+          ))}
+        </ul>
+      )}
+
       <Link to="/cart" style={{ textDecoration: "none" }}>
         <Button radius="lg" style={{ width: "100%" }}>
           <Text fontWeight="medium">
