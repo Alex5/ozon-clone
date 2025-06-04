@@ -1,6 +1,13 @@
 @import "/fonts/stylesheet.css";
 
 :root {
+  --is-desktop: {
+    @media screen and (min-width: 800px) {
+      .grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  }
   /* Цвета */
   --react-lavka-color-primary: #fce000;
 
@@ -12,7 +19,9 @@
   --react-lavka-font-size-xl: 24px;
 
   /* sizes */
-  --react-lavka-size-lg: 48px;
+  --react-lavka-size-sm: 38px;
+  --react-lavka-size-md: 48px;
+  --react-lavka-size-lg: 58px;
 
   /* Отступы */
   --react-lavka-spacing-xs: 4px;

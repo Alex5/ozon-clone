@@ -17,9 +17,9 @@ async function withRealisticBehavior<T>(response: () => T | Promise<T>) {
   await delay(randomDelay);
 
   if (shouldFail) {
-    return HttpResponse.json(null, {
+    return HttpResponse.json(undefined, {
       status: 500,
-      statusText: "Серверная ошибка. Повторите попытку позже.",
+      statusText: "server error, try later",
     });
   }
 

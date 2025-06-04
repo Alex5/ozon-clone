@@ -12,6 +12,9 @@ export const baseVariants = tv({
     },
     size: {
       lg: styles["size-lg"],
+      sm: styles["size-sm"],
+      md: styles["size-md"],
+      auto: styles["size-auto"]
     },
     radius: {
       md: styles["radius-md"],

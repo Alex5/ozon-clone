@@ -10,5 +10,9 @@ type BaseImageProps = {
   ImageStylesProps;
 
 export function Image(props: BaseImageProps) {
-  return <img className={imageStyles(props)} {...props} />;
+  return (
+    <div className={imageStyles(props)}>
+      <img {...props} />
+    </div>
+  );
 }

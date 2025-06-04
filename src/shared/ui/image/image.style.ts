@@ -6,10 +6,9 @@ import styles from "./image.module.css";
 export const imageStyles = tv({
   base: styles.image,
   extend: baseVariants,
-  variants: {
-    pointers: {
-      cursor: styles["image-pointer"],
-    },
+  variants: {},
+  defaultVariants: {
+    size: "auto",
   },
 });
 

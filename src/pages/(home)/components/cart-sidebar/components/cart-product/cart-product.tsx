@@ -24,9 +24,9 @@ export function CartProduct(props: CartProductProps) {
       <Image
         src={snippetImage.url}
         radius="lg"
-        h4
         aspectRatio="1 / 1"
-        style={{ flex: 1, width: "100%" }}
+        style={{ flex: 1 }}
+        size="md"
       />
       <Div flex flexCol gap2>
         <Text textStyle="xs">{longTitle}</Text>

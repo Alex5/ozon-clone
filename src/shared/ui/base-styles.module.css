@@ -14,8 +14,24 @@
   background-color: transparent;
 }
 
+.size-sm {
+  height: var(--react-lavka-size-sm);
+  width: var(--react-lavka-size-sm);
+}
+
+.size-md {
+  height: var(--react-lavka-size-md);
+  width: var(--react-lavka-size-md);
+}
+
 .size-lg {
   height: var(--react-lavka-size-lg);
+  width: var(--react-lavka-size-lg);
+}
+
+.size-auto {
+  height: 100%;
+  width: 100%;
 }
 
 .radius-rounded {
