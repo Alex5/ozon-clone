@@ -4,25 +4,18 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider } from "./app/router";
 import { SWRProvider } from "./app/swr-provider";
-import { addLoaderToElement, prepareRoot } from "@shared/services/dom.service";
-import { enableMocking } from "@shared/services/mock.service";
 
-prepareRoot().then((root) => {
-  const loader = addLoaderToElement(root);
+const root = document.getElementById("root")!;
 
-  enableMocking()
-    .catch((error) => {
-      console.error("enable mocking error: ", error);
-    })
-    .finally(() => {
-      root.removeChild(loader);
+root.style.setProperty(
+  "background-color",
+  "var(--react-lavka-color-background)"
+);
 
-      createRoot(root).render(
-        <StrictMode>
-          <SWRProvider>
-            <RouterProvider />
-          </SWRProvider>
-        </StrictMode>
-      );
-    });
-});
+createRoot(root).render(
+  <StrictMode>
+    <SWRProvider>
+      <RouterProvider />
+    </SWRProvider>
+  </StrictMode>
+);

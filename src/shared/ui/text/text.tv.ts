@@ -11,6 +11,7 @@ export const text = tv({
       sm: styles.sm,
       md: styles.md,
       lg: styles.lg,
+      xl: styles.xl,
     },
     fontWeight: {
       thin: styles.thin,

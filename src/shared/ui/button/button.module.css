@@ -7,6 +7,10 @@
   cursor: pointer;
 }
 
+.button:disabled {
+  background-color: rgba(101,92,78,.1);
+}
+
 .size-icon {
   padding: 4px;
 }

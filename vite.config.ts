@@ -5,4 +5,12 @@ import tsconfigPaths from "vite-tsconfig-paths";
 export default defineConfig({
   base: "/react-lavka/",
   plugins: [react(), tsconfigPaths()],
+  server: {
+    proxy: {
+      "/api": {
+        target: "http://localhost:8000",
+        changeOrigin: true,
+      },
+    },
+  },
 });
