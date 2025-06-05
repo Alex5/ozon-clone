@@ -1,0 +1,3079 @@
+{
+  "yaTraceId": "22bf57cb8e84dad7a73c2c1218028d75",
+  "offerId": "901b624c63094db28ccecd5e4e962225",
+  "layoutId": "7ca7b99e98c172accf0b6d55cf605a25",
+  "categoryGroup": {
+    "id": "c5988f7285aed71bc21216620fcbf170",
+    "title": "Овощной прилавок"
+  },
+  "categories": [
+    {
+      "id": "1d7af4eeaa4be67efc98a85ccb8f8d07",
+      "deepLink": "seasonal",
+      "layout": {
+        "width": 0,
+        "height": 0,
+        "type": "category",
+        "id": "1d7af4eeaa4be67efc98a85ccb8f8d07"
+      },
+      "index": 0,
+      "value": {
+        "id": "1d7af4eeaa4be67efc98a85ccb8f8d07",
+        "deepLink": "seasonal",
+        "title": "Самый сезон",
+        "available": true,
+        "itemMeta": {
+          "$titleColor": "#ffffff",
+          "$placeholderColor": "#ffffff",
+          "$isHideTitleOnTile": false,
+          "skipInCaasPromo": false,
+          "disableDiscountsCarousel": false
+        },
+        "type": "category",
+        "viewType": "default",
+        "imageSize": [288, 288],
+        "hideTitle": false,
+        "backgroundColor": "#ffffff"
+      },
+      "items": [
+        {
+          "id": "3635921faa6845f3ac48a6cf9295c9fd000200020000",
+          "layout": {
+            "width": 0,
+            "height": 0,
+            "type": "subcategory",
+            "id": "3635921faa6845f3ac48a6cf9295c9fd000200020000"
+          },
+          "index": 0,
+          "value": {
+            "id": "3635921faa6845f3ac48a6cf9295c9fd000200020000",
+            "title": "Клубника и голубика",
+            "available": true,
+            "disableCoUpsales": true,
+            "type": "subcategory",
+            "viewType": "default",
+            "imageSize": [288, 288],
+            "hideTitle": false,
+            "backgroundColor": "#EDF7FC"
+          },
+          "items": [
+            {
+              "id": "5ce5c5c56fdf445b9f6d7977bad56712000200010001",
+              "deepLink": "klubnika-otbornaya-rossiya-250-gram",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "5ce5c5c56fdf445b9f6d7977bad56712000200010001",
+                "isHero": false
+              },
+              "index": 0,
+              "value": {
+                "id": "5ce5c5c56fdf445b9f6d7977bad56712000200010001",
+                "deepLink": "klubnika-otbornaya-rossiya-250-gram",
+                "title": "Клуб­ни­ка Вик­то­рия Рос­сия",
+                "longTitle": "Клубника Виктория Россия",
+                "amount": "250 г",
+                "available": true,
+                "quantityLimit": "15",
+                "pricing": {
+                  "priceTemplate": "499 $SIGN$$CURRENCY$",
+                  "price": "499"
+                },
+                "stickers": [
+                  {
+                    "stickerColor": "#fcb900",
+                    "text": "Сладкая",
+                    "textColor": "#ffffff"
+                  }
+                ],
+                "stickersV2": [
+                  {
+                    "stickerId": "seasonal",
+                    "text": "сезон"
+                  }
+                ],
+                "facts": ["sweetFeminine"],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "250",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/fcde1bbe-b271-4a70-a771-7f412bc57d1e/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            },
+            {
+              "id": "149281487046456ebc95001f3b35b62a000300010000",
+              "deepLink": "klubnika-rossiya-500-gram",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "149281487046456ebc95001f3b35b62a000300010000",
+                "isHero": false
+              },
+              "index": 1,
+              "value": {
+                "id": "149281487046456ebc95001f3b35b62a000300010000",
+                "deepLink": "klubnika-rossiya-500-gram",
+                "title": "Клуб­ни­ка, Рос­сия",
+                "longTitle": "Клубника, Россия",
+                "amount": "500 г",
+                "available": true,
+                "quantityLimit": "48",
+                "withVideo": true,
+                "pricing": {
+                  "priceTemplate": "569 $SIGN$$CURRENCY$",
+                  "price": "569"
+                },
+                "stickers": [],
+                "stickersV2": [
+                  {
+                    "stickerId": "seasonal",
+                    "text": "сезон"
+                  }
+                ],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "500",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2888787/f23c6968-6e3f-45a8-8beb-405e7732f68e/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            },
+            {
+              "id": "f3200dd165b34136a3c47992679ced3a000100010001",
+              "deepLink": "klubnika-250-gram",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "f3200dd165b34136a3c47992679ced3a000100010001",
+                "isHero": false
+              },
+              "index": 2,
+              "value": {
+                "id": "f3200dd165b34136a3c47992679ced3a000100010001",
+                "deepLink": "klubnika-250-gram",
+                "title": "Клуб­ни­ка",
+                "longTitle": "Клубника",
+                "amount": "250 г",
+                "available": true,
+                "quantityLimit": "55",
+                "pricing": {
+                  "priceTemplate": "299 $SIGN$$CURRENCY$",
+                  "price": "299"
+                },
+                "stickers": [],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "250",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2783132/f5aba417-18fd-4767-b7fe-4bbf47e457aa/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            },
+            {
+              "id": "5fd6c481333543678c8616512a2dc46a000400020001",
+              "deepLink": "golubika-250-gram",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "5fd6c481333543678c8616512a2dc46a000400020001",
+                "isHero": false
+              },
+              "index": 3,
+              "value": {
+                "id": "5fd6c481333543678c8616512a2dc46a000400020001",
+                "deepLink": "golubika-250-gram",
+                "title": "Голу­би­ка",
+                "longTitle": "Голубика",
+                "amount": "250 г",
+                "available": true,
+                "quantityLimit": "5",
+                "pricing": {
+                  "priceTemplate": "529 $SIGN$$CURRENCY$",
+                  "price": "529"
+                },
+                "stickers": [],
+                "stickersV2": [
+                  {
+                    "stickerId": "seasonal",
+                    "text": "сезон"
+                  }
+                ],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "250",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/edd44899-432c-40c2-bdbf-c7874c209170/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            },
+            {
+              "id": "0bc98f1687034e0cbe50f9936b7234ca000200010001",
+              "deepLink": "golubika-125-gram-2",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "0bc98f1687034e0cbe50f9936b7234ca000200010001",
+                "isHero": false
+              },
+              "index": 4,
+              "value": {
+                "id": "0bc98f1687034e0cbe50f9936b7234ca000200010001",
+                "deepLink": "golubika-125-gram-2",
+                "title": "Голу­би­ка",
+                "longTitle": "Голубика",
+                "amount": "125 г",
+                "available": true,
+                "quantityLimit": "18",
+                "pricing": {
+                  "priceTemplate": "279 $SIGN$$CURRENCY$",
+                  "price": "279"
+                },
+                "stickers": [],
+                "stickersV2": [
+                  {
+                    "stickerId": "seasonal",
+                    "text": "сезон"
+                  }
+                ],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "125",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2791769/5144226f-f7f2-4b3a-9d8c-b7ca300fd0d2/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            }
+          ],
+          "discountInformers": [],
+          "banners": []
+        },
+        {
+          "id": "19b499d9531b45828c439ecc0a5ab9c4000200020001",
+          "deepLink": "chereshnya",
+          "layout": {
+            "width": 0,
+            "height": 0,
+            "type": "subcategory",
+            "id": "19b499d9531b45828c439ecc0a5ab9c4000200020001"
+          },
+          "index": 1,
+          "value": {
+            "id": "19b499d9531b45828c439ecc0a5ab9c4000200020001",
+            "deepLink": "chereshnya",
+            "title": "Черешня",
+            "available": true,
+            "type": "subcategory",
+            "viewType": "default",
+            "imageSize": [288, 288],
+            "hideTitle": false,
+            "backgroundColor": "#EDF7FC"
+          },
+          "items": [
+            {
+              "id": "b99a36589d7f48be896fedb492d3de40000300010000",
+              "deepLink": "chereshnya-uzbekistan-500-gram",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "b99a36589d7f48be896fedb492d3de40000300010000",
+                "isHero": false
+              },
+              "index": 5,
+              "value": {
+                "id": "b99a36589d7f48be896fedb492d3de40000300010000",
+                "deepLink": "chereshnya-uzbekistan-500-gram",
+                "title": "Череш­ня, Узбе­ки­стан",
+                "longTitle": "Черешня, Узбекистан",
+                "amount": "500 г",
+                "available": true,
+                "quantityLimit": "51",
+                "pricing": {
+                  "priceTemplate": "439 $SIGN$$CURRENCY$",
+                  "price": "439"
+                },
+                "discountPricing": {
+                  "priceTemplate": "329 $SIGN$$CURRENCY$",
+                  "price": "329",
+                  "bundleDiscountDesc": "−25%",
+                  "discountLabel": "−25%",
+                  "labelColor": "#fc5230"
+                },
+                "stickers": [],
+                "stickersV2": [
+                  {
+                    "stickerId": "discount",
+                    "text": "−25%"
+                  },
+                  {
+                    "stickerId": "seasonal",
+                    "text": "сезон"
+                  }
+                ],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "500",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/a22c0649-6102-4939-8bc4-633a2a648d45/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            },
+            {
+              "id": "5498f051c4d14c7488bbb15c54b381b5000200010001",
+              "deepLink": "chereshnya-250-gram",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "5498f051c4d14c7488bbb15c54b381b5000200010001",
+                "isHero": false
+              },
+              "index": 6,
+              "value": {
+                "id": "5498f051c4d14c7488bbb15c54b381b5000200010001",
+                "deepLink": "chereshnya-250-gram",
+                "title": "Череш­ня",
+                "longTitle": "Черешня",
+                "amount": "250 г",
+                "available": true,
+                "quantityLimit": "46",
+                "pricing": {
+                  "priceTemplate": "279 $SIGN$$CURRENCY$",
+                  "price": "279"
+                },
+                "stickers": [],
+                "stickersV2": [
+                  {
+                    "stickerId": "seasonal",
+                    "text": "сезон"
+                  }
+                ],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "250",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/0e7d0b2d-35de-42f0-9b7f-a8b729418166/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            }
+          ],
+          "discountInformers": [],
+          "banners": []
+        },
+        {
+          "id": "98ae0e9489f342fdb7667cc30f883b4e000500020002",
+          "layout": {
+            "width": 0,
+            "height": 0,
+            "type": "subcategory",
+            "id": "98ae0e9489f342fdb7667cc30f883b4e000500020002"
+          },
+          "index": 2,
+          "value": {
+            "id": "98ae0e9489f342fdb7667cc30f883b4e000500020002",
+            "title": "Сезонные ягоды",
+            "available": true,
+            "type": "subcategory",
+            "viewType": "default",
+            "imageSize": [288, 288],
+            "hideTitle": false,
+            "backgroundColor": "#EDF7FC"
+          },
+          "items": [
+            {
+              "id": "5fb831708e2847fb9fd33392224e26ce000100010001",
+              "deepLink": "ezhevika-meksika-artfruit-125-gram",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "5fb831708e2847fb9fd33392224e26ce000100010001",
+                "isHero": false
+              },
+              "index": 7,
+              "value": {
+                "id": "5fb831708e2847fb9fd33392224e26ce000100010001",
+                "deepLink": "ezhevika-meksika-artfruit-125-gram",
+                "title": "Еже­ви­ка Арт­ф­рут",
+                "longTitle": "Ежевика «Артфрут»",
+                "amount": "125 г",
+                "available": true,
+                "quantityLimit": "8",
+                "withVideo": true,
+                "pricing": {
+                  "priceTemplate": "599 $SIGN$$CURRENCY$",
+                  "price": "599"
+                },
+                "stickers": [],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "125",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2998515/d2060dfe-f38b-43af-892d-1494d13b7dee/{w}x{h}",
+                  "substrated": false
+                },
+                "snippetVideo": {
+                  "posterUrl": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/e9aaad4d-1cfe-45bc-87bd-d2c45c0ac01e/orig",
+                  "videoUrl": "https://yastatic.net/s3/lavka-pigeon/video/02c9f3fb-3ae0-4ab3-b5e9-6838f0f78dd5.mp4"
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            },
+            {
+              "id": "d2b5cddefb464901a61765ae884ec250000200010001",
+              "deepLink": "malina-artfruit-125-gram-2",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "d2b5cddefb464901a61765ae884ec250000200010001",
+                "isHero": false
+              },
+              "index": 8,
+              "value": {
+                "id": "d2b5cddefb464901a61765ae884ec250000200010001",
+                "deepLink": "malina-artfruit-125-gram-2",
+                "title": "Мали­на Арт­ф­рут",
+                "longTitle": "Малина «Артфрут»",
+                "amount": "125 г",
+                "available": true,
+                "quantityLimit": "1",
+                "withVideo": true,
+                "pricing": {
+                  "priceTemplate": "599 $SIGN$$CURRENCY$",
+                  "price": "599"
+                },
+                "stickers": [],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "125",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2888787/a394ae6b-2113-49e4-bb46-9c1962d12a01/{w}x{h}",
+                  "substrated": false
+                },
+                "snippetVideo": {
+                  "posterUrl": "https://avatars.mds.yandex.net/get-grocery-goods/2783132/eb41b846-f51b-49e2-b50d-49afaa43bcf6/orig",
+                  "videoUrl": "https://yastatic.net/s3/lavka-pigeon/video/9f5573fc-cc72-4b6a-bea6-883fd8074a35.mp4"
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            }
+          ],
+          "discountInformers": [],
+          "banners": []
+        },
+        {
+          "id": "523dcf16d6124898b18ec2cdbf362061000400020001",
+          "layout": {
+            "width": 0,
+            "height": 0,
+            "type": "subcategory",
+            "id": "523dcf16d6124898b18ec2cdbf362061000400020001"
+          },
+          "index": 3,
+          "value": {
+            "id": "523dcf16d6124898b18ec2cdbf362061000400020001",
+            "title": "Арбузы и дыни",
+            "available": true,
+            "type": "subcategory",
+            "viewType": "default",
+            "imageSize": [288, 288],
+            "hideTitle": false,
+            "backgroundColor": "#EDF7FC"
+          },
+          "items": [
+            {
+              "id": "52ef78eafce84270b5ebf4cd64645dc9000200010000",
+              "deepLink": "arbuz-iran-5-kilogram",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "52ef78eafce84270b5ebf4cd64645dc9000200010000",
+                "isHero": false
+              },
+              "index": 9,
+              "value": {
+                "id": "52ef78eafce84270b5ebf4cd64645dc9000200010000",
+                "deepLink": "arbuz-iran-5-kilogram",
+                "title": "Арбуз",
+                "longTitle": "Арбуз",
+                "amount": "5 кг",
+                "available": true,
+                "quantityLimit": "2",
+                "pricing": {
+                  "priceTemplate": "949 $SIGN$$CURRENCY$",
+                  "price": "949"
+                },
+                "stickers": [],
+                "stickersV2": [
+                  {
+                    "stickerId": "seasonal",
+                    "text": "сезон"
+                  }
+                ],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "5",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/2b1413d2-eba5-4d9b-be48-f6ad33ef3d0a/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            }
+          ],
+          "discountInformers": [],
+          "banners": []
+        },
+        {
+          "id": "ffdb626ff24e4b9fbbc472a89836a33b000300020002",
+          "layout": {
+            "width": 0,
+            "height": 0,
+            "type": "subcategory",
+            "id": "ffdb626ff24e4b9fbbc472a89836a33b000300020002"
+          },
+          "index": 4,
+          "value": {
+            "id": "ffdb626ff24e4b9fbbc472a89836a33b000300020002",
+            "title": "Персики и нектарины",
+            "available": true,
+            "disableCoUpsales": true,
+            "type": "subcategory",
+            "viewType": "default",
+            "imageSize": [288, 288],
+            "hideTitle": false,
+            "backgroundColor": "#EDF7FC"
+          },
+          "items": [
+            {
+              "id": "d52142f895c7465390f6307976e1a3b9000200010000",
+              "deepLink": "persiki-500-gram",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "d52142f895c7465390f6307976e1a3b9000200010000",
+                "isHero": false
+              },
+              "index": 10,
+              "value": {
+                "id": "d52142f895c7465390f6307976e1a3b9000200010000",
+                "deepLink": "persiki-500-gram",
+                "title": "Пер­си­ки",
+                "longTitle": "Персики",
+                "amount": "500 г",
+                "available": true,
+                "quantityLimit": "15",
+                "withVideo": true,
+                "pricing": {
+                  "priceTemplate": "349 $SIGN$$CURRENCY$",
+                  "price": "349"
+                },
+                "stickers": [],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "500",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2783132/b6f6ac75-7226-4d75-bc3a-6367e664d915/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            }
+          ],
+          "discountInformers": [],
+          "banners": []
+        },
+        {
+          "id": "a617d516e378424497943b4147f607e3000200020000",
+          "layout": {
+            "width": 0,
+            "height": 0,
+            "type": "subcategory",
+            "id": "a617d516e378424497943b4147f607e3000200020000"
+          },
+          "index": 5,
+          "value": {
+            "id": "a617d516e378424497943b4147f607e3000200020000",
+            "title": "Абрикосы и сливы",
+            "available": true,
+            "disableCoUpsales": true,
+            "type": "subcategory",
+            "viewType": "default",
+            "imageSize": [288, 288],
+            "hideTitle": false,
+            "backgroundColor": "#EDF7FC"
+          },
+          "items": [
+            {
+              "id": "12a22a37b39a44fdb35b392ce8b0e9e7000200010000",
+              "deepLink": "abrikosy-500-gram",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "12a22a37b39a44fdb35b392ce8b0e9e7000200010000",
+                "isHero": false
+              },
+              "index": 11,
+              "value": {
+                "id": "12a22a37b39a44fdb35b392ce8b0e9e7000200010000",
+                "deepLink": "abrikosy-500-gram",
+                "title": "Абри­ко­сы",
+                "longTitle": "Абрикосы",
+                "amount": "500 г",
+                "available": true,
+                "quantityLimit": "27",
+                "pricing": {
+                  "priceTemplate": "199 $SIGN$$CURRENCY$",
+                  "price": "199"
+                },
+                "stickers": [],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "500",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2998515/ccbf5729-f78f-4781-8f91-7b090f57ec02/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            },
+            {
+              "id": "1f21dd8c0aa2420ab359d1116a903537000200010000",
+              "deepLink": "alycha-zelyonaya-500-gram",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "1f21dd8c0aa2420ab359d1116a903537000200010000",
+                "isHero": false
+              },
+              "index": 12,
+              "value": {
+                "id": "1f21dd8c0aa2420ab359d1116a903537000200010000",
+                "deepLink": "alycha-zelyonaya-500-gram",
+                "title": "Алы­ча зелё­ная",
+                "longTitle": "Алыча зелёная",
+                "amount": "250 г",
+                "available": true,
+                "quantityLimit": "4",
+                "withVideo": true,
+                "pricing": {
+                  "priceTemplate": "349 $SIGN$$CURRENCY$",
+                  "price": "349"
+                },
+                "stickers": [],
+                "stickersV2": [
+                  {
+                    "stickerId": "seasonal",
+                    "text": "сезон"
+                  }
+                ],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "250",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/2f645013-496c-47c6-87fc-5c010c166e84/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            }
+          ],
+          "discountInformers": [],
+          "banners": []
+        },
+        {
+          "id": "06a0a7c5b9924eefacdab71291d585e9000300020000",
+          "layout": {
+            "width": 0,
+            "height": 0,
+            "type": "subcategory",
+            "id": "06a0a7c5b9924eefacdab71291d585e9000300020000"
+          },
+          "index": 6,
+          "value": {
+            "id": "06a0a7c5b9924eefacdab71291d585e9000300020000",
+            "title": "Огурцы и помидоры",
+            "available": true,
+            "type": "subcategory",
+            "viewType": "default",
+            "imageSize": [288, 288],
+            "hideTitle": false,
+            "backgroundColor": "#EDF7FC"
+          },
+          "items": [
+            {
+              "id": "8c47db06947a44b998d0d28376ada5cd000200010001",
+              "deepLink": "pomidory-rozovye-500-gram-2",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "8c47db06947a44b998d0d28376ada5cd000200010001",
+                "isHero": false
+              },
+              "index": 13,
+              "value": {
+                "id": "8c47db06947a44b998d0d28376ada5cd000200010001",
+                "deepLink": "pomidory-rozovye-500-gram-2",
+                "title": "Поми­до­ры Бычье серд­це Азер­бай­джан",
+                "longTitle": "Помидоры розовые «Бычье сердце», Азербайджан",
+                "amount": "600 г",
+                "available": true,
+                "quantityLimit": "8",
+                "pricing": {
+                  "priceTemplate": "229 $SIGN$$CURRENCY$",
+                  "price": "229"
+                },
+                "stickers": [],
+                "stickersV2": [
+                  {
+                    "stickerId": "seasonal",
+                    "text": "сезон"
+                  }
+                ],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "600",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2998515/ef5ea635-d488-4a41-8e5b-fc42445143c8/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            },
+            {
+              "id": "23f1399f19c9496f8459374539c32a12000200010001",
+              "deepLink": "pomidory-sladkie-koktejlnye-uzbekistan-300-gram",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "23f1399f19c9496f8459374539c32a12000200010001",
+                "isHero": false
+              },
+              "index": 14,
+              "value": {
+                "id": "23f1399f19c9496f8459374539c32a12000200010001",
+                "deepLink": "pomidory-sladkie-koktejlnye-uzbekistan-300-gram",
+                "title": "Поми­до­ры слад­кие кок­тейль­ные, Узбе­ки­стан",
+                "longTitle": "Помидоры сладкие коктейльные, Узбекистан",
+                "amount": "300 г",
+                "available": true,
+                "quantityLimit": "2",
+                "pricing": {
+                  "priceTemplate": "499 $SIGN$$CURRENCY$",
+                  "price": "499"
+                },
+                "stickers": [
+                  {
+                    "stickerColor": "#fcb900",
+                    "text": "Сладкие",
+                    "textColor": "#ffffff"
+                  }
+                ],
+                "stickersV2": [
+                  {
+                    "stickerId": "seasonal",
+                    "text": "сезон"
+                  }
+                ],
+                "facts": ["sweet"],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "300",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/46caf017-4473-40d3-9958-b5a02ada08df/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            },
+            {
+              "id": "b00bb96b78f547baaf89de8b17bc12df000200010000",
+              "deepLink": "ogurcy-bakinskie-azerbajdzhan-300-gram-2",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "b00bb96b78f547baaf89de8b17bc12df000200010000",
+                "isHero": false
+              },
+              "index": 15,
+              "value": {
+                "id": "b00bb96b78f547baaf89de8b17bc12df000200010000",
+                "deepLink": "ogurcy-bakinskie-azerbajdzhan-300-gram-2",
+                "title": "Огур­цы Бакин­ские Азер­бай­джан",
+                "longTitle": "Огурцы Бакинские, Азербайджан",
+                "amount": "300 г",
+                "available": true,
+                "quantityLimit": "3",
+                "pricing": {
+                  "priceTemplate": "219 $SIGN$$CURRENCY$",
+                  "price": "219"
+                },
+                "stickers": [],
+                "stickersV2": [
+                  {
+                    "stickerId": "seasonal",
+                    "text": "сезон"
+                  }
+                ],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "300",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/100c7dd3-c202-430e-b43a-98866ec0f6b8/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            },
+            {
+              "id": "40bae96ae7a84559ac2c830ea96701cd000100020000",
+              "deepLink": "ogurcy-bakinskie-belyj-patron-300-gram",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "40bae96ae7a84559ac2c830ea96701cd000100020000",
+                "isHero": false
+              },
+              "index": 16,
+              "value": {
+                "id": "40bae96ae7a84559ac2c830ea96701cd000100020000",
+                "deepLink": "ogurcy-bakinskie-belyj-patron-300-gram",
+                "title": "Огур­цы бакин­ские Белый патрон",
+                "longTitle": "Огурцы бакинские «Белый патрон»",
+                "amount": "300 г",
+                "available": true,
+                "quantityLimit": "1",
+                "pricing": {
+                  "priceTemplate": "289 $SIGN$$CURRENCY$",
+                  "price": "289"
+                },
+                "stickers": [],
+                "stickersV2": [
+                  {
+                    "stickerId": "seasonal",
+                    "text": "сезон"
+                  }
+                ],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "300",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2805921/fb323ba1-a7b9-4b50-bfe6-68fe1f1e2cc3/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            },
+            {
+              "id": "1228d29512ba4c0f888e85b013fd6a43000200010000",
+              "deepLink": "ogurcy-luhovickie-500-gram",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "1228d29512ba4c0f888e85b013fd6a43000200010000",
+                "isHero": false
+              },
+              "index": 17,
+              "value": {
+                "id": "1228d29512ba4c0f888e85b013fd6a43000200010000",
+                "deepLink": "ogurcy-luhovickie-500-gram",
+                "title": "Огур­цы лухо­виц­кие",
+                "longTitle": "Огурцы луховицкие",
+                "amount": "500 г",
+                "available": true,
+                "quantityLimit": "7",
+                "pricing": {
+                  "priceTemplate": "179 $SIGN$$CURRENCY$",
+                  "price": "179"
+                },
+                "stickers": [],
+                "stickersV2": [
+                  {
+                    "stickerId": "seasonal",
+                    "text": "сезон"
+                  }
+                ],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "500",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/4d696371-d486-473c-878b-1c139d44e3cb/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            },
+            {
+              "id": "49f4931842dc4aa98142521e0d4f9e2c000100010001",
+              "deepLink": "ogurcy-kolyuchie-tsh-600-gram",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "49f4931842dc4aa98142521e0d4f9e2c000100010001",
+                "isHero": false
+              },
+              "index": 18,
+              "value": {
+                "id": "49f4931842dc4aa98142521e0d4f9e2c000100010001",
+                "deepLink": "ogurcy-kolyuchie-tsh-600-gram",
+                "title": "Огур­цы колю­чие ТСХ",
+                "longTitle": "Огурцы колючие ТСХ",
+                "amount": "600 г",
+                "available": true,
+                "quantityLimit": "6",
+                "pricing": {
+                  "priceTemplate": "239 $SIGN$$CURRENCY$",
+                  "price": "239"
+                },
+                "stickers": [],
+                "stickersV2": [
+                  {
+                    "stickerId": "seasonal",
+                    "text": "сезон"
+                  }
+                ],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "600",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2805921/4f61b021-f162-43fe-8f48-b6bcc7d1ad5e/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            }
+          ],
+          "discountInformers": [],
+          "banners": []
+        },
+        {
+          "id": "6bba5faee24443b68c1aa0e3182695a4000100020000",
+          "layout": {
+            "width": 0,
+            "height": 0,
+            "type": "subcategory",
+            "id": "6bba5faee24443b68c1aa0e3182695a4000100020000"
+          },
+          "index": 7,
+          "value": {
+            "id": "6bba5faee24443b68c1aa0e3182695a4000100020000",
+            "title": "Другие овощи",
+            "available": true,
+            "type": "subcategory",
+            "viewType": "default",
+            "imageSize": [288, 288],
+            "hideTitle": false,
+            "backgroundColor": "#EDF7FC"
+          },
+          "items": [
+            {
+              "id": "2e81fcc7c05143cfb0361a808c3068ec000200010000",
+              "deepLink": "stebel-seldereya-1-unit",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "2e81fcc7c05143cfb0361a808c3068ec000200010000",
+                "isHero": false
+              },
+              "index": 19,
+              "value": {
+                "id": "2e81fcc7c05143cfb0361a808c3068ec000200010000",
+                "deepLink": "stebel-seldereya-1-unit",
+                "title": "Сте­бель сель­де­рея",
+                "longTitle": "Стебель сельдерея",
+                "amount": "1 шт.",
+                "available": true,
+                "quantityLimit": "6",
+                "pricing": {
+                  "priceTemplate": "139 $SIGN$$CURRENCY$",
+                  "price": "139"
+                },
+                "stickers": [],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "1",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2805921/7a18f7df-208d-4487-afb8-0d65e4915570/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            },
+            {
+              "id": "bb3c4f25122d450c890b7bc0f25ef46b000100010001",
+              "deepLink": "kartofel-molodoj-egipet-1-kilogram-2",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "bb3c4f25122d450c890b7bc0f25ef46b000100010001",
+                "isHero": false
+              },
+              "index": 20,
+              "value": {
+                "id": "bb3c4f25122d450c890b7bc0f25ef46b000100010001",
+                "deepLink": "kartofel-molodoj-egipet-1-kilogram-2",
+                "title": "Кар­то­фель моло­дой Еги­пет",
+                "longTitle": "Картофель молодой, Египет",
+                "amount": "1 кг",
+                "available": true,
+                "quantityLimit": "6",
+                "pricing": {
+                  "priceTemplate": "169 $SIGN$$CURRENCY$",
+                  "price": "169"
+                },
+                "stickers": [],
+                "stickersV2": [
+                  {
+                    "stickerId": "seasonal",
+                    "text": "сезон"
+                  }
+                ],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "1",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2756334/4dc3d6fa-7dbe-493f-9214-8568be115a56/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            },
+            {
+              "id": "26c10fedc4b34a0ba335ec3f09735204000300010000",
+              "deepLink": "kartofel-rannij-azerbajdzhan-1-kilogram",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "26c10fedc4b34a0ba335ec3f09735204000300010000",
+                "isHero": false
+              },
+              "index": 21,
+              "value": {
+                "id": "26c10fedc4b34a0ba335ec3f09735204000300010000",
+                "deepLink": "kartofel-rannij-azerbajdzhan-1-kilogram",
+                "title": "Кар­то­фель ран­ний Азер­бай­джан",
+                "longTitle": "Картофель ранний Азербайджан",
+                "amount": "1 кг",
+                "available": true,
+                "quantityLimit": "1",
+                "pricing": {
+                  "priceTemplate": "179 $SIGN$$CURRENCY$",
+                  "price": "179"
+                },
+                "stickers": [],
+                "stickersV2": [
+                  {
+                    "stickerId": "seasonal",
+                    "text": "сезон"
+                  }
+                ],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "1",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2998515/4352656a-7497-479f-a0cb-e80031f4664d/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            },
+            {
+              "id": "d76551e2ecc8476c9936beedcbd89d64000200010000",
+              "deepLink": "svyokla-rossiya-500-gram",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "d76551e2ecc8476c9936beedcbd89d64000200010000",
+                "isHero": false
+              },
+              "index": 22,
+              "value": {
+                "id": "d76551e2ecc8476c9936beedcbd89d64000200010000",
+                "deepLink": "svyokla-rossiya-500-gram",
+                "title": "Свёк­ла моло­дая",
+                "longTitle": "Свёкла молодая",
+                "amount": "500 г",
+                "available": true,
+                "quantityLimit": "2",
+                "pricing": {
+                  "priceTemplate": "99 $SIGN$$CURRENCY$",
+                  "price": "99"
+                },
+                "stickers": [],
+                "stickersV2": [
+                  {
+                    "stickerId": "seasonal",
+                    "text": "сезон"
+                  }
+                ],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "500",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/b6d50465-45b7-4cd0-8493-766cde0f58d4/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            },
+            {
+              "id": "c3a8fae118bf42d3b1436183db541e70000300010000",
+              "deepLink": "redis-s-botvoj-250-gram",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "c3a8fae118bf42d3b1436183db541e70000300010000",
+                "isHero": false
+              },
+              "index": 23,
+              "value": {
+                "id": "c3a8fae118bf42d3b1436183db541e70000300010000",
+                "deepLink": "redis-s-botvoj-250-gram",
+                "title": "Редис с бот­вой",
+                "longTitle": "Редис с ботвой",
+                "amount": "300 г",
+                "available": true,
+                "quantityLimit": "1",
+                "pricing": {
+                  "priceTemplate": "149 $SIGN$$CURRENCY$",
+                  "price": "149"
+                },
+                "stickers": [],
+                "stickersV2": [
+                  {
+                    "stickerId": "seasonal",
+                    "text": "сезон"
+                  }
+                ],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "300",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2756334/b1dc4103-3284-4c9b-bcf3-1c8b3d58767f/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            },
+            {
+              "id": "d6399b42b255432a811864019b45c4a8000100010001",
+              "deepLink": "nabor-dlya-okroshki-luk-ukrop-redis-200-gram",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "d6399b42b255432a811864019b45c4a8000100010001",
+                "isHero": false
+              },
+              "index": 24,
+              "value": {
+                "id": "d6399b42b255432a811864019b45c4a8000100010001",
+                "deepLink": "nabor-dlya-okroshki-luk-ukrop-redis-200-gram",
+                "title": "Набор для окрош­ки лук, укроп, редис",
+                "longTitle": "Набор для окрошки лук, укроп, редис",
+                "amount": "200 г",
+                "available": true,
+                "quantityLimit": "2",
+                "pricing": {
+                  "priceTemplate": "139 $SIGN$$CURRENCY$",
+                  "price": "139"
+                },
+                "stickers": [],
+                "stickersV2": [
+                  {
+                    "stickerId": "seasonal",
+                    "text": "сезон"
+                  }
+                ],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "200",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/726a7c2e-5134-466b-b7bb-eb4faa75ffde/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            },
+            {
+              "id": "c31faac62e104e8cb10125e2899aa800000100010001",
+              "deepLink": "kapusta-molodaya-uzbekistan-600-gram",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "c31faac62e104e8cb10125e2899aa800000100010001",
+                "isHero": false
+              },
+              "index": 25,
+              "value": {
+                "id": "c31faac62e104e8cb10125e2899aa800000100010001",
+                "deepLink": "kapusta-molodaya-uzbekistan-600-gram",
+                "title": "Капу­ста моло­дая",
+                "longTitle": "Капуста молодая",
+                "amount": "1 шт.",
+                "available": true,
+                "quantityLimit": "3",
+                "pricing": {
+                  "priceTemplate": "149 $SIGN$$CURRENCY$",
+                  "price": "149"
+                },
+                "stickers": [],
+                "stickersV2": [
+                  {
+                    "stickerId": "seasonal",
+                    "text": "сезон"
+                  }
+                ],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "1",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2888787/e7177c59-b110-4ecc-aafb-f8c807299121/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            },
+            {
+              "id": "4c8897f66eda405797a2525271c0b1bb000200010000",
+              "deepLink": "chesnok-molodoj-2-unit",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "4c8897f66eda405797a2525271c0b1bb000200010000",
+                "isHero": false
+              },
+              "index": 26,
+              "value": {
+                "id": "4c8897f66eda405797a2525271c0b1bb000200010000",
+                "deepLink": "chesnok-molodoj-2-unit",
+                "title": "Чес­нок моло­дой",
+                "longTitle": "Чеснок молодой",
+                "amount": "2 шт.",
+                "available": true,
+                "quantityLimit": "1",
+                "pricing": {
+                  "priceTemplate": "99 $SIGN$$CURRENCY$",
+                  "price": "99"
+                },
+                "stickers": [],
+                "stickersV2": [
+                  {
+                    "stickerId": "seasonal",
+                    "text": "сезон"
+                  }
+                ],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "2",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/9260ae4e-d11b-4628-ad28-027e67bbf210/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            },
+            {
+              "id": "62a7747faf1a44a39808f657957d5589000100010001",
+              "deepLink": "kapusta-kejl-75-gram",
+              "layout": {
+                "width": 2,
+                "height": 4,
+                "type": "good",
+                "id": "62a7747faf1a44a39808f657957d5589000100010001",
+                "isHero": false
+              },
+              "index": 27,
+              "value": {
+                "id": "62a7747faf1a44a39808f657957d5589000100010001",
+                "deepLink": "kapusta-kejl-75-gram",
+                "title": "Капу­ста Кейл",
+                "longTitle": "Капуста «Кейл»",
+                "amount": "75 г",
+                "available": true,
+                "quantityLimit": "1",
+                "pricing": {
+                  "priceTemplate": "129 $SIGN$$CURRENCY$",
+                  "price": "129"
+                },
+                "stickers": [],
+                "stickersV2": [
+                  {
+                    "stickerId": "seasonal",
+                    "text": "сезон"
+                  }
+                ],
+                "options": {
+                  "pricePerCount": "1",
+                  "incrementStep": "75",
+                  "quantityType": "unit",
+                  "docsRequired": false
+                },
+                "snippetImage": {
+                  "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/093003a9-749d-443a-97b0-d24c3d731ad4/{w}x{h}",
+                  "substrated": false
+                },
+                "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+                "type": "good",
+                "viewType": "default",
+                "imageSize": [288, 288],
+                "hideTitle": false,
+                "backgroundColor": "#EDF7FC"
+              },
+              "items": [],
+              "discountInformers": [],
+              "banners": []
+            }
+          ],
+          "discountInformers": [],
+          "banners": []
+        }
+      ],
+      "discountInformers": [],
+      "banners": []
+    }
+  ],
+  "products": [
+    {
+      "type": "good",
+      "id": "5ce5c5c56fdf445b9f6d7977bad56712000200010001",
+      "isMarkdown": false,
+      "deepLink": "klubnika-otbornaya-rossiya-250-gram",
+      "title": "Клуб­ни­ка Вик­то­рия Рос­сия",
+      "longTitle": "Клубника Виктория Россия",
+      "stickers": [
+        {
+          "stickerColor": "#fcb900",
+          "text": "Сладкая",
+          "textColor": "#ffffff"
+        }
+      ],
+      "stickersV2": [
+        {
+          "stickerId": "seasonal",
+          "text": "сезон"
+        }
+      ],
+      "facts": ["sweetFeminine"],
+      "amount": "250 г",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/fcde1bbe-b271-4a70-a771-7f412bc57d1e/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 499,
+        "priceSigned": "499 ₽",
+        "priceTemplate": "499 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 499,
+      "currentPriceSigned": "499 ₽",
+      "currentPriceTemplate": "499 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "15",
+      "maxAmount": 15,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": false,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "250",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "b99a36589d7f48be896fedb492d3de40000300010000",
+      "isMarkdown": false,
+      "deepLink": "chereshnya-uzbekistan-500-gram",
+      "title": "Череш­ня, Узбе­ки­стан",
+      "longTitle": "Черешня, Узбекистан",
+      "stickers": [],
+      "stickersV2": [
+        {
+          "stickerId": "discount",
+          "text": "−25%"
+        },
+        {
+          "stickerId": "seasonal",
+          "text": "сезон"
+        }
+      ],
+      "amount": "500 г",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/a22c0649-6102-4939-8bc4-633a2a648d45/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 439,
+        "priceSigned": "439 ₽",
+        "priceTemplate": "439 $SIGN$$CURRENCY$"
+      },
+      "discountPricing": {
+        "labelColor": "#fc5230",
+        "discountLabel": "−25%",
+        "discountLabelTemplate": "−25%",
+        "price": 329,
+        "priceSigned": "329 ₽",
+        "priceTemplate": "329 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 329,
+      "currentPriceSigned": "329 ₽",
+      "currentPriceTemplate": "329 $SIGN$$CURRENCY$",
+      "oldPrice": 439,
+      "oldPriceSigned": "439 ₽",
+      "oldPriceTemplate": "439 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "51",
+      "maxAmount": 51,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": false,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "500",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "c3a8fae118bf42d3b1436183db541e70000300010000",
+      "isMarkdown": false,
+      "deepLink": "redis-s-botvoj-250-gram",
+      "title": "Редис с бот­вой",
+      "longTitle": "Редис с ботвой",
+      "stickers": [],
+      "stickersV2": [
+        {
+          "stickerId": "seasonal",
+          "text": "сезон"
+        }
+      ],
+      "amount": "300 г",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2756334/b1dc4103-3284-4c9b-bcf3-1c8b3d58767f/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 149,
+        "priceSigned": "149 ₽",
+        "priceTemplate": "149 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 149,
+      "currentPriceSigned": "149 ₽",
+      "currentPriceTemplate": "149 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "1",
+      "maxAmount": 1,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": true,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "300",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "f3200dd165b34136a3c47992679ced3a000100010001",
+      "isMarkdown": false,
+      "deepLink": "klubnika-250-gram",
+      "title": "Клуб­ни­ка",
+      "longTitle": "Клубника",
+      "stickers": [],
+      "amount": "250 г",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2783132/f5aba417-18fd-4767-b7fe-4bbf47e457aa/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 299,
+        "priceSigned": "299 ₽",
+        "priceTemplate": "299 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 299,
+      "currentPriceSigned": "299 ₽",
+      "currentPriceTemplate": "299 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "55",
+      "maxAmount": 55,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": false,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "250",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "d52142f895c7465390f6307976e1a3b9000200010000",
+      "isMarkdown": false,
+      "deepLink": "persiki-500-gram",
+      "title": "Пер­си­ки",
+      "longTitle": "Персики",
+      "stickers": [],
+      "amount": "500 г",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2783132/b6f6ac75-7226-4d75-bc3a-6367e664d915/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 349,
+        "priceSigned": "349 ₽",
+        "priceTemplate": "349 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 349,
+      "currentPriceSigned": "349 ₽",
+      "currentPriceTemplate": "349 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "15",
+      "maxAmount": 15,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": false,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "withVideo": true,
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "500",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "149281487046456ebc95001f3b35b62a000300010000",
+      "isMarkdown": false,
+      "deepLink": "klubnika-rossiya-500-gram",
+      "title": "Клуб­ни­ка, Рос­сия",
+      "longTitle": "Клубника, Россия",
+      "stickers": [],
+      "stickersV2": [
+        {
+          "stickerId": "seasonal",
+          "text": "сезон"
+        }
+      ],
+      "amount": "500 г",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2888787/f23c6968-6e3f-45a8-8beb-405e7732f68e/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 569,
+        "priceSigned": "569 ₽",
+        "priceTemplate": "569 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 569,
+      "currentPriceSigned": "569 ₽",
+      "currentPriceTemplate": "569 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "48",
+      "maxAmount": 48,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": false,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "withVideo": true,
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "500",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "0bc98f1687034e0cbe50f9936b7234ca000200010001",
+      "isMarkdown": false,
+      "deepLink": "golubika-125-gram-2",
+      "title": "Голу­би­ка",
+      "longTitle": "Голубика",
+      "stickers": [],
+      "stickersV2": [
+        {
+          "stickerId": "seasonal",
+          "text": "сезон"
+        }
+      ],
+      "amount": "125 г",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2791769/5144226f-f7f2-4b3a-9d8c-b7ca300fd0d2/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 279,
+        "priceSigned": "279 ₽",
+        "priceTemplate": "279 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 279,
+      "currentPriceSigned": "279 ₽",
+      "currentPriceTemplate": "279 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "18",
+      "maxAmount": 18,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": false,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "125",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "40bae96ae7a84559ac2c830ea96701cd000100020000",
+      "isMarkdown": false,
+      "deepLink": "ogurcy-bakinskie-belyj-patron-300-gram",
+      "title": "Огур­цы бакин­ские Белый патрон",
+      "longTitle": "Огурцы бакинские «Белый патрон»",
+      "stickers": [],
+      "stickersV2": [
+        {
+          "stickerId": "seasonal",
+          "text": "сезон"
+        }
+      ],
+      "amount": "300 г",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2805921/fb323ba1-a7b9-4b50-bfe6-68fe1f1e2cc3/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 289,
+        "priceSigned": "289 ₽",
+        "priceTemplate": "289 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 289,
+      "currentPriceSigned": "289 ₽",
+      "currentPriceTemplate": "289 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "1",
+      "maxAmount": 1,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": true,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "300",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "2e81fcc7c05143cfb0361a808c3068ec000200010000",
+      "isMarkdown": false,
+      "deepLink": "stebel-seldereya-1-unit",
+      "title": "Сте­бель сель­де­рея",
+      "longTitle": "Стебель сельдерея",
+      "stickers": [],
+      "amount": "1 шт.",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2805921/7a18f7df-208d-4487-afb8-0d65e4915570/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 139,
+        "priceSigned": "139 ₽",
+        "priceTemplate": "139 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 139,
+      "currentPriceSigned": "139 ₽",
+      "currentPriceTemplate": "139 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "6",
+      "maxAmount": 6,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": false,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "1",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "5498f051c4d14c7488bbb15c54b381b5000200010001",
+      "isMarkdown": false,
+      "deepLink": "chereshnya-250-gram",
+      "title": "Череш­ня",
+      "longTitle": "Черешня",
+      "stickers": [],
+      "stickersV2": [
+        {
+          "stickerId": "seasonal",
+          "text": "сезон"
+        }
+      ],
+      "amount": "250 г",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/0e7d0b2d-35de-42f0-9b7f-a8b729418166/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 279,
+        "priceSigned": "279 ₽",
+        "priceTemplate": "279 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 279,
+      "currentPriceSigned": "279 ₽",
+      "currentPriceTemplate": "279 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "46",
+      "maxAmount": 46,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": false,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "250",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "5fb831708e2847fb9fd33392224e26ce000100010001",
+      "isMarkdown": false,
+      "deepLink": "ezhevika-meksika-artfruit-125-gram",
+      "title": "Еже­ви­ка Арт­ф­рут",
+      "longTitle": "Ежевика «Артфрут»",
+      "stickers": [],
+      "amount": "125 г",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2998515/d2060dfe-f38b-43af-892d-1494d13b7dee/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "snippetVideo": {
+        "poster": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/e9aaad4d-1cfe-45bc-87bd-d2c45c0ac01e/orig",
+        "src": "https://yastatic.net/s3/lavka-pigeon/video/02c9f3fb-3ae0-4ab3-b5e9-6838f0f78dd5.mp4"
+      },
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 599,
+        "priceSigned": "599 ₽",
+        "priceTemplate": "599 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 599,
+      "currentPriceSigned": "599 ₽",
+      "currentPriceTemplate": "599 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "8",
+      "maxAmount": 8,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": false,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "withVideo": true,
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "125",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "52ef78eafce84270b5ebf4cd64645dc9000200010000",
+      "isMarkdown": false,
+      "deepLink": "arbuz-iran-5-kilogram",
+      "title": "Арбуз",
+      "longTitle": "Арбуз",
+      "stickers": [],
+      "stickersV2": [
+        {
+          "stickerId": "seasonal",
+          "text": "сезон"
+        }
+      ],
+      "amount": "5 кг",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/2b1413d2-eba5-4d9b-be48-f6ad33ef3d0a/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 949,
+        "priceSigned": "949 ₽",
+        "priceTemplate": "949 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 949,
+      "currentPriceSigned": "949 ₽",
+      "currentPriceTemplate": "949 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "2",
+      "maxAmount": 2,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": true,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "5",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "49f4931842dc4aa98142521e0d4f9e2c000100010001",
+      "isMarkdown": false,
+      "deepLink": "ogurcy-kolyuchie-tsh-600-gram",
+      "title": "Огур­цы колю­чие ТСХ",
+      "longTitle": "Огурцы колючие ТСХ",
+      "stickers": [],
+      "stickersV2": [
+        {
+          "stickerId": "seasonal",
+          "text": "сезон"
+        }
+      ],
+      "amount": "600 г",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2805921/4f61b021-f162-43fe-8f48-b6bcc7d1ad5e/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 239,
+        "priceSigned": "239 ₽",
+        "priceTemplate": "239 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 239,
+      "currentPriceSigned": "239 ₽",
+      "currentPriceTemplate": "239 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "6",
+      "maxAmount": 6,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": false,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "600",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "8c47db06947a44b998d0d28376ada5cd000200010001",
+      "isMarkdown": false,
+      "deepLink": "pomidory-rozovye-500-gram-2",
+      "title": "Поми­до­ры Бычье серд­це Азер­бай­джан",
+      "longTitle": "Помидоры розовые «Бычье сердце», Азербайджан",
+      "stickers": [],
+      "stickersV2": [
+        {
+          "stickerId": "seasonal",
+          "text": "сезон"
+        }
+      ],
+      "amount": "600 г",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2998515/ef5ea635-d488-4a41-8e5b-fc42445143c8/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 229,
+        "priceSigned": "229 ₽",
+        "priceTemplate": "229 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 229,
+      "currentPriceSigned": "229 ₽",
+      "currentPriceTemplate": "229 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "8",
+      "maxAmount": 8,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": false,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "600",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "12a22a37b39a44fdb35b392ce8b0e9e7000200010000",
+      "isMarkdown": false,
+      "deepLink": "abrikosy-500-gram",
+      "title": "Абри­ко­сы",
+      "longTitle": "Абрикосы",
+      "stickers": [],
+      "amount": "500 г",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2998515/ccbf5729-f78f-4781-8f91-7b090f57ec02/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 199,
+        "priceSigned": "199 ₽",
+        "priceTemplate": "199 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 199,
+      "currentPriceSigned": "199 ₽",
+      "currentPriceTemplate": "199 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "27",
+      "maxAmount": 27,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": false,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "500",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "d2b5cddefb464901a61765ae884ec250000200010001",
+      "isMarkdown": false,
+      "deepLink": "malina-artfruit-125-gram-2",
+      "title": "Мали­на Арт­ф­рут",
+      "longTitle": "Малина «Артфрут»",
+      "stickers": [],
+      "amount": "125 г",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2888787/a394ae6b-2113-49e4-bb46-9c1962d12a01/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "snippetVideo": {
+        "poster": "https://avatars.mds.yandex.net/get-grocery-goods/2783132/eb41b846-f51b-49e2-b50d-49afaa43bcf6/orig",
+        "src": "https://yastatic.net/s3/lavka-pigeon/video/9f5573fc-cc72-4b6a-bea6-883fd8074a35.mp4"
+      },
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 599,
+        "priceSigned": "599 ₽",
+        "priceTemplate": "599 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 599,
+      "currentPriceSigned": "599 ₽",
+      "currentPriceTemplate": "599 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "1",
+      "maxAmount": 1,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": true,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "withVideo": true,
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "125",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "1f21dd8c0aa2420ab359d1116a903537000200010000",
+      "isMarkdown": false,
+      "deepLink": "alycha-zelyonaya-500-gram",
+      "title": "Алы­ча зелё­ная",
+      "longTitle": "Алыча зелёная",
+      "stickers": [],
+      "stickersV2": [
+        {
+          "stickerId": "seasonal",
+          "text": "сезон"
+        }
+      ],
+      "amount": "250 г",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/2f645013-496c-47c6-87fc-5c010c166e84/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 349,
+        "priceSigned": "349 ₽",
+        "priceTemplate": "349 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 349,
+      "currentPriceSigned": "349 ₽",
+      "currentPriceTemplate": "349 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "4",
+      "maxAmount": 4,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": false,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "withVideo": true,
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "250",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "4c8897f66eda405797a2525271c0b1bb000200010000",
+      "isMarkdown": false,
+      "deepLink": "chesnok-molodoj-2-unit",
+      "title": "Чес­нок моло­дой",
+      "longTitle": "Чеснок молодой",
+      "stickers": [],
+      "stickersV2": [
+        {
+          "stickerId": "seasonal",
+          "text": "сезон"
+        }
+      ],
+      "amount": "2 шт.",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/9260ae4e-d11b-4628-ad28-027e67bbf210/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 99,
+        "priceSigned": "99 ₽",
+        "priceTemplate": "99 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 99,
+      "currentPriceSigned": "99 ₽",
+      "currentPriceTemplate": "99 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "1",
+      "maxAmount": 1,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": true,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "2",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "23f1399f19c9496f8459374539c32a12000200010001",
+      "isMarkdown": false,
+      "deepLink": "pomidory-sladkie-koktejlnye-uzbekistan-300-gram",
+      "title": "Поми­до­ры слад­кие кок­тейль­ные, Узбе­ки­стан",
+      "longTitle": "Помидоры сладкие коктейльные, Узбекистан",
+      "stickers": [
+        {
+          "stickerColor": "#fcb900",
+          "text": "Сладкие",
+          "textColor": "#ffffff"
+        }
+      ],
+      "stickersV2": [
+        {
+          "stickerId": "seasonal",
+          "text": "сезон"
+        }
+      ],
+      "facts": ["sweet"],
+      "amount": "300 г",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/46caf017-4473-40d3-9958-b5a02ada08df/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 499,
+        "priceSigned": "499 ₽",
+        "priceTemplate": "499 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 499,
+      "currentPriceSigned": "499 ₽",
+      "currentPriceTemplate": "499 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "2",
+      "maxAmount": 2,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": true,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "300",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "26c10fedc4b34a0ba335ec3f09735204000300010000",
+      "isMarkdown": false,
+      "deepLink": "kartofel-rannij-azerbajdzhan-1-kilogram",
+      "title": "Кар­то­фель ран­ний Азер­бай­джан",
+      "longTitle": "Картофель ранний Азербайджан",
+      "stickers": [],
+      "stickersV2": [
+        {
+          "stickerId": "seasonal",
+          "text": "сезон"
+        }
+      ],
+      "amount": "1 кг",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2998515/4352656a-7497-479f-a0cb-e80031f4664d/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 179,
+        "priceSigned": "179 ₽",
+        "priceTemplate": "179 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 179,
+      "currentPriceSigned": "179 ₽",
+      "currentPriceTemplate": "179 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "1",
+      "maxAmount": 1,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": true,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "1",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "b00bb96b78f547baaf89de8b17bc12df000200010000",
+      "isMarkdown": false,
+      "deepLink": "ogurcy-bakinskie-azerbajdzhan-300-gram-2",
+      "title": "Огур­цы Бакин­ские Азер­бай­джан",
+      "longTitle": "Огурцы Бакинские, Азербайджан",
+      "stickers": [],
+      "stickersV2": [
+        {
+          "stickerId": "seasonal",
+          "text": "сезон"
+        }
+      ],
+      "amount": "300 г",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/100c7dd3-c202-430e-b43a-98866ec0f6b8/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 219,
+        "priceSigned": "219 ₽",
+        "priceTemplate": "219 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 219,
+      "currentPriceSigned": "219 ₽",
+      "currentPriceTemplate": "219 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "3",
+      "maxAmount": 3,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": false,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "300",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "d6399b42b255432a811864019b45c4a8000100010001",
+      "isMarkdown": false,
+      "deepLink": "nabor-dlya-okroshki-luk-ukrop-redis-200-gram",
+      "title": "Набор для окрош­ки лук, укроп, редис",
+      "longTitle": "Набор для окрошки лук, укроп, редис",
+      "stickers": [],
+      "stickersV2": [
+        {
+          "stickerId": "seasonal",
+          "text": "сезон"
+        }
+      ],
+      "amount": "200 г",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/726a7c2e-5134-466b-b7bb-eb4faa75ffde/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 139,
+        "priceSigned": "139 ₽",
+        "priceTemplate": "139 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 139,
+      "currentPriceSigned": "139 ₽",
+      "currentPriceTemplate": "139 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "2",
+      "maxAmount": 2,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": true,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "200",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "c31faac62e104e8cb10125e2899aa800000100010001",
+      "isMarkdown": false,
+      "deepLink": "kapusta-molodaya-uzbekistan-600-gram",
+      "title": "Капу­ста моло­дая",
+      "longTitle": "Капуста молодая",
+      "stickers": [],
+      "stickersV2": [
+        {
+          "stickerId": "seasonal",
+          "text": "сезон"
+        }
+      ],
+      "amount": "1 шт.",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2888787/e7177c59-b110-4ecc-aafb-f8c807299121/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 149,
+        "priceSigned": "149 ₽",
+        "priceTemplate": "149 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 149,
+      "currentPriceSigned": "149 ₽",
+      "currentPriceTemplate": "149 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "3",
+      "maxAmount": 3,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": false,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "1",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "1228d29512ba4c0f888e85b013fd6a43000200010000",
+      "isMarkdown": false,
+      "deepLink": "ogurcy-luhovickie-500-gram",
+      "title": "Огур­цы лухо­виц­кие",
+      "longTitle": "Огурцы луховицкие",
+      "stickers": [],
+      "stickersV2": [
+        {
+          "stickerId": "seasonal",
+          "text": "сезон"
+        }
+      ],
+      "amount": "500 г",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/4d696371-d486-473c-878b-1c139d44e3cb/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 179,
+        "priceSigned": "179 ₽",
+        "priceTemplate": "179 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 179,
+      "currentPriceSigned": "179 ₽",
+      "currentPriceTemplate": "179 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "7",
+      "maxAmount": 7,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": false,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "500",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "d76551e2ecc8476c9936beedcbd89d64000200010000",
+      "isMarkdown": false,
+      "deepLink": "svyokla-rossiya-500-gram",
+      "title": "Свёк­ла моло­дая",
+      "longTitle": "Свёкла молодая",
+      "stickers": [],
+      "stickersV2": [
+        {
+          "stickerId": "seasonal",
+          "text": "сезон"
+        }
+      ],
+      "amount": "500 г",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/b6d50465-45b7-4cd0-8493-766cde0f58d4/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 99,
+        "priceSigned": "99 ₽",
+        "priceTemplate": "99 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 99,
+      "currentPriceSigned": "99 ₽",
+      "currentPriceTemplate": "99 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "2",
+      "maxAmount": 2,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": true,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "500",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "5fd6c481333543678c8616512a2dc46a000400020001",
+      "isMarkdown": false,
+      "deepLink": "golubika-250-gram",
+      "title": "Голу­би­ка",
+      "longTitle": "Голубика",
+      "stickers": [],
+      "stickersV2": [
+        {
+          "stickerId": "seasonal",
+          "text": "сезон"
+        }
+      ],
+      "amount": "250 г",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/edd44899-432c-40c2-bdbf-c7874c209170/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 529,
+        "priceSigned": "529 ₽",
+        "priceTemplate": "529 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 529,
+      "currentPriceSigned": "529 ₽",
+      "currentPriceTemplate": "529 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "5",
+      "maxAmount": 5,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": false,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "250",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "62a7747faf1a44a39808f657957d5589000100010001",
+      "isMarkdown": false,
+      "deepLink": "kapusta-kejl-75-gram",
+      "title": "Капу­ста Кейл",
+      "longTitle": "Капуста «Кейл»",
+      "stickers": [],
+      "stickersV2": [
+        {
+          "stickerId": "seasonal",
+          "text": "сезон"
+        }
+      ],
+      "amount": "75 г",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2750890/093003a9-749d-443a-97b0-d24c3d731ad4/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 129,
+        "priceSigned": "129 ₽",
+        "priceTemplate": "129 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 129,
+      "currentPriceSigned": "129 ₽",
+      "currentPriceTemplate": "129 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "1",
+      "maxAmount": 1,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": true,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "75",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    },
+    {
+      "type": "good",
+      "id": "bb3c4f25122d450c890b7bc0f25ef46b000100010001",
+      "isMarkdown": false,
+      "deepLink": "kartofel-molodoj-egipet-1-kilogram-2",
+      "title": "Кар­то­фель моло­дой Еги­пет",
+      "longTitle": "Картофель молодой, Египет",
+      "stickers": [],
+      "stickersV2": [
+        {
+          "stickerId": "seasonal",
+          "text": "сезон"
+        }
+      ],
+      "amount": "1 кг",
+      "snippetImage": {
+        "url": "https://avatars.mds.yandex.net/get-grocery-goods/2756334/4dc3d6fa-7dbe-493f-9214-8568be115a56/{w}x{h}",
+        "substrated": false
+      },
+      "isFavorite": false,
+      "pricing": {
+        "amountPrice": 0,
+        "amountPriceSigned": "0",
+        "price": 169,
+        "priceSigned": "169 ₽",
+        "priceTemplate": "169 $SIGN$$CURRENCY$"
+      },
+      "currentPrice": 169,
+      "currentPriceSigned": "169 ₽",
+      "currentPriceTemplate": "169 $SIGN$$CURRENCY$",
+      "isExpiring": false,
+      "adult": false,
+      "requiredRestriction": null,
+      "available": true,
+      "quantityLimit": "6",
+      "maxAmount": 6,
+      "baseStep": 1,
+      "incrementStep": 1,
+      "isLowStock": false,
+      "productTags": [],
+      "masterCategoryId": "695a9591e8c54b91a5955c777fd5d388000200010000",
+      "rewardedProductSamplingInfos": [],
+      "options": {
+        "pricePerCount": "1",
+        "incrementStep": "1",
+        "quantityType": "unit",
+        "docsRequired": false
+      },
+      "children": []
+    }
+  ]
+}

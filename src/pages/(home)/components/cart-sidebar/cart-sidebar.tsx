@@ -18,11 +18,11 @@ export function CartSidebar() {
   return (
     <aside className={styles["cart-sidebar"]}>
       <Text
-        textStyle="lg"
-        fontWeight="medium"
+        textStyle="md"
+        fontWeight="bold"
         style={{ display: "block", marginBottom: "20px" }}
       >
-        15–25 мин, 0-119
+        15–25 мин, 0–119{" "}₽
       </Text>
       {cartItems.length === 0 ? (
         <div
@@ -54,7 +54,7 @@ export function CartSidebar() {
       )}
 
       <Link to="/cart" style={{ textDecoration: "none" }}>
-        <Button radius="lg" style={{ width: "100%" }}>
+        <Button radius="lg" style={{ width: "100%" }} disabled={!total}>
           <Text fontWeight="medium">
             {total
               ? "В корзину " +

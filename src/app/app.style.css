@@ -7,9 +7,9 @@
   /* Типографика */
   --react-lavka-font-size-xs: 12px;
   --react-lavka-font-size-sm: 14px;
-  --react-lavka-font-size-md: 16px;
-  --react-lavka-font-size-lg: 20px;
-  --react-lavka-font-size-xl: 24px;
+  --react-lavka-font-size-md: 1.3em;
+  --react-lavka-font-size-lg: 1.5rem;
+  --react-lavka-font-size-xl: 2rem;
 
   /* sizes */
   --react-lavka-size-sm: 38px;
