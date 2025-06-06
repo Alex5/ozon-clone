@@ -3,10 +3,8 @@ import type { CartItem } from "@mocks/handlers";
 
 export type CartType = Record<string, CartItem>;
 
-const USER_ID = "samurai";
-
 export function useCart() {
-  const { data, ...rest } = useSWR<CartType>(`cart/${USER_ID}`);
+  const { data, ...rest } = useSWR<CartType>("cart");
 
   return {
     cart: data,

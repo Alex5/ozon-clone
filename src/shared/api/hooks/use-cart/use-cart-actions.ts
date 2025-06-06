@@ -12,7 +12,7 @@ export function useCartActions() {
     };
 
     async function addProduct(product: ProductType): Promise<CartType> {
-      return await fetcher("cart/samurai", {
+      return await fetcher("cart", {
         method: "POST",
         body: JSON.stringify(product),
       });
@@ -50,7 +50,7 @@ export function useCartActions() {
 
     try {
       await mutate(
-        fetcher(`cart/samurai/${product.id}`, {
+        fetcher(`cart/${product.id}`, {
           method: "DELETE",
         }),
         {
