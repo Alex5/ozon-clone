@@ -10,7 +10,7 @@ export function AddToCartButton({ product }: { product: ProductType }) {
 
   const { addToCart, removeFromCart } = useCartActions();
 
-  const { quantity } = cart.get(product.id) ?? {};
+  const { quantity } = cart?.[product.id] ?? {};
 
   const isOpen = !!quantity;
 
