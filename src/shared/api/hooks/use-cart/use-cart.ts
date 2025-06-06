@@ -1,17 +1,13 @@
 import useSWR from "swr";
 import type { CartItem } from "@mocks/handlers";
 
+export type CartType = Record<string, CartItem>;
+
 export function useCart() {
-  const { data, ...rest } = useSWR<CartItem[]>("cart");
-
-  const cart = new Map<CartItem["product"]["id"], CartItem>();
-
-  data?.forEach((cartItem) => {
-    cart.set(cartItem.product.id, cartItem);
-  });
+  const { data, ...rest } = useSWR<CartType>("cart");
 
   return {
-    cart,
+    cart: data,
     data,
     ...rest,
   };

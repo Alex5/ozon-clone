@@ -1,27 +1,28 @@
-import type { CartItem } from "@mocks/handlers";
 import { fetcher } from "@shared/api/fetcher";
-import { useCart } from "@shared/api/hooks/use-cart/use-cart";
+import { useCart, type CartType } from "@shared/api/hooks/use-cart/use-cart";
 import type { ProductType } from "@mocks/types";
 
 export function useCartActions() {
   const { cart, mutate } = useCart();
 
   async function handleAddProductToCart(product: ProductType) {
-    const cartItem: CartItem = {
+    const cartItem = {
       product,
-      quantity: (cart.get(product.id)?.quantity ?? 0) + 1,
+      quantity: (cart?.[product.id]?.quantity ?? 0) + 1,
     };
 
-    async function addProduct(product: ProductType): Promise<CartItem[]> {
+    async function addProduct(product: ProductType): Promise<CartType> {
       return await fetcher("cart", {
         method: "POST",
         body: JSON.stringify(product),
       });
     }
 
+    const optimisticData = { ...cart, [product.id]: cartItem };
+
     try {
       await mutate(addProduct(product), {
-        optimisticData: [...(Array.from(cart.values()) ?? []), cartItem],
+        optimisticData: optimisticData,
         rollbackOnError: true,
         populateCache: true,
         revalidate: false,
@@ -32,16 +33,19 @@ export function useCartActions() {
   }
 
   async function handleRemoveProductFromCart(product: ProductType) {
-    const cartItem = cart.get(product.id);
+    const cartItem = cart?.[product.id];
 
-    let cartItems = Array.from(cart.values()) ?? [];
+    const newCart = { ...cart };
 
     if (cartItem) {
-      cartItems = cartItems.map((cartItem) =>
-        cartItem.product.id === product.id
-          ? { ...cartItem, quantity: cartItem.quantity - 1 }
-          : cartItem
-      );
+      if (cartItem.quantity === 1) {
+        delete newCart[cartItem.product.id];
+      } else {
+        newCart[cartItem.product.id] = {
+          ...cartItem,
+          quantity: cartItem.quantity - 1,
+        };
+      }
     }
 
     try {
@@ -50,7 +54,7 @@ export function useCartActions() {
           method: "DELETE",
         }),
         {
-          optimisticData: cartItems,
+          optimisticData: newCart,
           rollbackOnError: true,
           populateCache: true,
           revalidate: false,

@@ -8,12 +8,12 @@ import { Link } from "react-router";
 export function CartSidebar() {
   const { cart } = useCart();
 
-  const total = Array.from(cart.values())?.reduce(
+  const total = Object.values(cart ?? {})?.reduce(
     (acc, prev) => (acc += prev.product.currentPrice * prev.quantity),
     0
   );
 
-  const cartItems = Array.from(cart.values());
+  const cartItems = Object.values(cart ?? {});
 
   return (
     <aside className={styles["cart-sidebar"]}>
@@ -22,7 +22,7 @@ export function CartSidebar() {
         fontWeight="bold"
         style={{ display: "block", marginBottom: "20px" }}
       >
-        15–25 мин, 0–119{" "}₽
+        15–25 мин, 0–119 ₽
       </Text>
       {cartItems.length === 0 ? (
         <div
