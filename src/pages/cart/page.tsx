@@ -5,6 +5,7 @@ import { Text } from "@shared/ui/text/Text";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router";
 import { CartProductCard } from "./components/cart-product-card/cart-product-card";
+import { Button } from "@shared/ui/button/button";
 
 export function CartPage() {
   const { cart } = useCart();
@@ -31,6 +32,11 @@ export function CartPage() {
         <Div flex flexCol style={{ width: "328px" }} gap2>
           <Text>Итого</Text>
           <Text>К оплате: {total}</Text>
+          <a href={import.meta.env.VITE_API_URL + "/api/v1/yandex"}>
+            <Button colorPallete="yellow" radius="lg">
+              Перейти к оплате
+            </Button>
+          </a>
         </Div>
       </Div>
     </Div>

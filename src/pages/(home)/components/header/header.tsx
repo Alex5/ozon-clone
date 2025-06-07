@@ -4,9 +4,10 @@ import { Github } from "lucide-react";
 import { Button } from "@shared/ui/button/button";
 import { repository } from "../../../../../package.json";
 import { useAuth } from "@shared/api/hooks/use-auth/use-auth";
+import { Text } from "@shared/ui/text/Text";
 
 export function Header() {
-  const { login, logout, me } = useAuth();
+  const { logout, me } = useAuth();
 
   return (
     <header className={styles.header}>
@@ -20,35 +21,16 @@ export function Header() {
         <Div flex gap2>
           <Div flex gap2>
             {me?.username ? (
-              <>
-                <span style={{ color: "blueviolet" }}>{me?.username}</span>
-                <button onClick={logout}>logout</button>
-              </>
+              <Div flex>
+                <Text fontWeight="medium">{me?.username}</Text>
+                <button onClick={logout}>Выйти</button>
+              </Div>
             ) : (
-              <form
-                onSubmit={async (e) => {
-                  e.preventDefault();
-
-                  const formData = new FormData(e.currentTarget);
-
-                  const username = formData.get("username")?.toString();
-
-                  if (!username) {
-                    alert("no username");
-
-                    return;
-                  }
-
-                  await login({ username });
-                }}
-              >
-                <input
-                  type="text"
-                  name="username"
-                  placeholder="Введите username"
-                />
-                <button type="submit">Войти</button>
-              </form>
+              <a href={import.meta.env.VITE_API_URL + "/api/v1/yandex"}>
+                <Button colorPallete="yellow" radius="md">
+                  <Text fontWeight="medium">Войти</Text>
+                </Button>
+              </a>
             )}
           </Div>
           <a href={repository} target="_blank">
