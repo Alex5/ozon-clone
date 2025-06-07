@@ -9,7 +9,7 @@ export function useCart() {
   const { cache } = useSWRConfig();
 
   const { data, mutate, ...rest } = useSWR<CartType, unknown, string | null>(
-    me?.username ? "cart" : null,
+    `cart?username=${me?.username}`,
     (key) =>
       me?.username
         ? fetcher(key, {
