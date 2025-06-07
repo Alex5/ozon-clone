@@ -16,6 +16,7 @@ export function useCartActions() {
       return fetcher("cart", {
         method: "POST",
         body: JSON.stringify(product),
+        credentials: "include",
       });
     }
 
@@ -56,6 +57,7 @@ export function useCartActions() {
       return fetcher(`cart/${product.id}`, {
         method: "DELETE",
         body: JSON.stringify(product),
+        credentials: "include",
       });
     }
 
