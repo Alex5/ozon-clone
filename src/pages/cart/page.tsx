@@ -1,11 +1,10 @@
 import { useCart } from "@shared/api/hooks/use-cart/use-cart";
 import { calculateTotal } from "@shared/services/amount.service";
 import { Div } from "@shared/ui/div/div";
-import { Image } from "@shared/ui/image/image.component";
-import { ProductQuantitySelector } from "@shared/ui/product-quantity-select/product-quantity-select";
 import { Text } from "@shared/ui/text/Text";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router";
+import { CartProductCard } from "./components/cart-product-card/cart-product-card";
 
 export function CartPage() {
   const { cart } = useCart();
@@ -25,23 +24,8 @@ export function CartPage() {
       <Text textStyle="lg">Корзина</Text>
       <Div flex gap2>
         <Div flex flexCol gap2 style={{ width: "100%" }}>
-          {cartItems.map(({ product, quantity }) => (
-            <Div key={product.id} flex gap2>
-              <Image
-                src={product.snippetImage.url}
-                aspectRatio="1 / 1"
-                size="lg"
-                radius="lg"
-              />
-              <Text fontWeight="normal" textStyle="md" style={{ flex: 1 }}>
-                {product.longTitle}
-              </Text>
-              <ProductQuantitySelector quantity={quantity}>
-                <ProductQuantitySelector.Decrement />
-                <ProductQuantitySelector.Quantity />
-                <ProductQuantitySelector.Increment />
-              </ProductQuantitySelector>
-            </Div>
+          {cartItems.map((cartItem) => (
+            <CartProductCard key={cartItem.product.id} cartItem={cartItem} />
           ))}
         </Div>
         <Div flex flexCol style={{ width: "328px" }} gap2>
