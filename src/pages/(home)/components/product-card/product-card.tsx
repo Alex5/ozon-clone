@@ -1,11 +1,11 @@
 import styles from "./product-card.module.css";
 
-import type { ProductType } from "@mocks/types";
 import { Card } from "@shared/ui/card/card";
 import { Float } from "@shared/ui/float/float";
 import { Image } from "@shared/ui/image/image.component";
 import { Text } from "@shared/ui/text/Text";
 import { AddToCartButton } from "./components/add-to-cart-button/add-to-cart-button";
+import type { ProductType } from "@shared/api/hooks/use-products/use-products.types";
 
 export function ProductCard({ product }: { product: ProductType }) {
   return (
