@@ -1,10 +1,10 @@
 import { Text } from "@shared/ui/text/Text";
-import type { CartItem } from "@mocks/handlers";
 import { Image } from "@shared/ui/image/image.component";
 
 import { useCartActions } from "@shared/api/hooks/use-cart/use-cart-actions";
 import { Div } from "@shared/ui/div/div";
 import { ProductQuantitySelector } from "@shared/ui/product-quantity-select/product-quantity-select";
+import type { CartItem } from "@shared/api/hooks/use-cart/use-cart.types";
 
 type CartProductProps = {
   cartItem: CartItem;
