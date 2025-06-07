@@ -1,8 +1,6 @@
 import useSWR, { useSWRConfig, type MutatorOptions } from "swr";
-import type { CartItem } from "@mocks/handlers";
 import { fetcher } from "@shared/api/fetcher";
-
-export type CartType = Record<string, CartItem>;
+import type { CartType } from "./use-cart.types";
 
 const isUserAuthorized = false;
 
@@ -15,7 +13,7 @@ export function useCart() {
       isUserAuthorized ? fetcher(key) : Promise.resolve(cache.get("cart")?.data)
   );
 
-  const customMutation =({
+  const customMutation = ({
     fetcher,
     options,
   }: {

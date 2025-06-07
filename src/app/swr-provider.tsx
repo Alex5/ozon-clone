@@ -6,14 +6,6 @@ type SWRProviderProps = {
   children: ReactNode;
 };
 
-
-
-
-
 export function SWRProvider({ children }: SWRProviderProps) {
-  return (
-    <SWRConfig value={{ fetcher}}>
-      {children}
-    </SWRConfig>
-  );
+  return <SWRConfig value={{ fetcher }}>{children}</SWRConfig>;
 }

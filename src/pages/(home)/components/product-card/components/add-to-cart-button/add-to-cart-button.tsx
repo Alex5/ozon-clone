@@ -1,9 +1,9 @@
 import { useCart } from "@shared/api/hooks/use-cart/use-cart";
-import type { ProductType } from "@mocks/types";
 import { Button } from "@shared/ui/button/button";
 import { Text } from "@shared/ui/text/Text";
 import { useCartActions } from "@shared/api/hooks/use-cart/use-cart-actions";
 import styles from "./add-to-cart-button.module.css";
+import type { ProductType } from "@shared/api/hooks/use-products/use-products.types";
 
 export function AddToCartButton({ product }: { product: ProductType }) {
   const { cart } = useCart();
