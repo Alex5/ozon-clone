@@ -13,7 +13,7 @@ export function Header() {
           alt="react-lavka-logo"
           height={28}
         />
-        <Div>
+        <Div flex gap2>
           <a href={repository} target="_blank">
             <Button colorPallete="gray" radius="lg">
               <Github />
