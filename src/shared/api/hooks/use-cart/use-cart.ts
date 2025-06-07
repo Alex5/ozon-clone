@@ -1,16 +1,17 @@
 import useSWR, { useSWRConfig, type MutatorOptions } from "swr";
 import { fetcher } from "@shared/api/fetcher";
 import type { CartType } from "./use-cart.types";
-
-const isUserAuthorized = false;
+import { useAuth } from "../use-auth/use-auth";
 
 export function useCart() {
+  const { me } = useAuth();
+
   const { cache } = useSWRConfig();
 
   const { data, mutate, ...rest } = useSWR<CartType, unknown, string>(
     "cart",
     (key) =>
-      isUserAuthorized ? fetcher(key) : Promise.resolve(cache.get("cart")?.data)
+      me?.username ? fetcher(key) : Promise.resolve(cache.get("cart")?.data)
   );
 
   const customMutation = ({
@@ -20,7 +21,7 @@ export function useCart() {
     fetcher: () => Promise<CartType> | CartType;
     options: MutatorOptions;
   }) => {
-    if (!isUserAuthorized) {
+    if (!me?.username) {
       return mutate(options.optimisticData, options);
     } else {
       return mutate(fetcher, options);
