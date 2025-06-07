@@ -1,6 +1,6 @@
-import { fetcher } from "@shared/api/fetcher";
 import { useCart, type CartType } from "@shared/api/hooks/use-cart/use-cart";
 import type { ProductType } from "@mocks/types";
+import { fetcher } from "@shared/api/fetcher";
 
 export function useCartActions() {
   const { cart, mutate } = useCart();
@@ -11,8 +11,8 @@ export function useCartActions() {
       quantity: (cart?.[product.id]?.quantity ?? 0) + 1,
     };
 
-    async function addProduct(product: ProductType): Promise<CartType> {
-      return await fetcher("cart", {
+    function addProduct(product: ProductType): Promise<CartType> {
+      return fetcher("cart", {
         method: "POST",
         body: JSON.stringify(product),
       });
@@ -21,11 +21,14 @@ export function useCartActions() {
     const optimisticData = { ...cart, [product.id]: cartItem };
 
     try {
-      await mutate(addProduct(product), {
-        optimisticData: optimisticData,
-        rollbackOnError: true,
-        populateCache: true,
-        revalidate: false,
+      await mutate({
+        fetcher: () => addProduct(product),
+        options: {
+          optimisticData,
+          rollbackOnError: true,
+          populateCache: true,
+          revalidate: false,
+        },
       });
     } catch (error) {
       console.error(error);
@@ -48,18 +51,23 @@ export function useCartActions() {
       }
     }
 
+    function removeProduct(product: ProductType): Promise<CartType> {
+      return fetcher(`cart/${product.id}`, {
+        method: "DELETE",
+        body: JSON.stringify(product),
+      });
+    }
+
     try {
-      await mutate(
-        fetcher(`cart/${product.id}`, {
-          method: "DELETE",
-        }),
-        {
+      await mutate({
+        fetcher: () => removeProduct(product),
+        options: {
           optimisticData: newCart,
-          rollbackOnError: true,
+          rollbackOnError: false,
           populateCache: true,
           revalidate: false,
-        }
-      );
+        },
+      });
     } catch (error) {
       console.error(error);
     }
