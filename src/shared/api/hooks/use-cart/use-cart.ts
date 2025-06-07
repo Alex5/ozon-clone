@@ -8,10 +8,14 @@ export function useCart() {
 
   const { cache } = useSWRConfig();
 
-  const { data, mutate, ...rest } = useSWR<CartType, unknown, string>(
-    "cart",
+  const { data, mutate, ...rest } = useSWR<CartType, unknown, string | null>(
+    `cart?username=${me?.username}`,
     (key) =>
-      me?.username ? fetcher(key) : Promise.resolve(cache.get("cart")?.data)
+      me?.username
+        ? fetcher(key, {
+            credentials: "include",
+          })
+        : Promise.resolve(cache.get("cart")?.data)
   );
 
   const customMutation = ({

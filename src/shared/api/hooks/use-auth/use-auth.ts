@@ -2,10 +2,11 @@ import { fetcher } from "@shared/api/fetcher";
 import useSWR from "swr";
 
 export function useAuth() {
-  const { data, mutate } = useSWR<{ username: string }, unknown, string>(
-    "me",
-    (key) => fetcher(key, { credentials: "include" })
-  );
+  const { data, mutate, ...rest } = useSWR<
+    { username: string },
+    unknown,
+    string
+  >("me", (key) => fetcher(key, { credentials: "include" }));
 
   async function login({ username }: { username: string }) {
     const res = await mutate(
@@ -43,5 +44,6 @@ export function useAuth() {
     me: data,
     login,
     logout,
+    ...rest,
   };
 }
