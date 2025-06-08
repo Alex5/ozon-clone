@@ -5,6 +5,7 @@ import { Button } from "@shared/ui/button/button";
 import { repository } from "../../../../../package.json";
 import { useAuth } from "@shared/api/hooks/use-auth/use-auth";
 import { Text } from "@shared/ui/text/Text";
+import { Image } from "@shared/ui/image/image.component";
 
 export function Header() {
   const { logout, me } = useAuth();
@@ -20,11 +21,14 @@ export function Header() {
 
         <Div flex gap2>
           <Div flex gap2>
-            {me?.username ? (
-              <Div flex>
-                <Text fontWeight="medium">{me?.username}</Text>
-                <button onClick={logout}>Выйти</button>
-              </Div>
+            {me ? (
+              <Image
+                src={`https://avatars.yandex.net/get-yapic/${me.default_avatar_id}/islands-retina-middle`}
+                onClick={logout}
+                radius="xl"
+                size="md"
+                style={{ cursor: "pointer" }}
+              />
             ) : (
               <a href={import.meta.env.VITE_API_URL + "/api/v1/yandex"}>
                 <Button colorPallete="yellow" radius="md">

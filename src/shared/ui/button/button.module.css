@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   border: unset;
-  padding: 0 12px 0 12px;
+  padding: 0 16px;
+  height: 42px;
   justify-content: center;
   cursor: pointer;
 }
