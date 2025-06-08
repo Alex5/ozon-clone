@@ -1,21 +1,21 @@
 import useSWR, { useSWRConfig, type MutatorOptions } from "swr";
 import { fetcher } from "@shared/api/fetcher";
 import type { CartType } from "./use-cart.types";
-import { useAuth } from "../use-auth/use-auth";
+import { useAuth, type YandexUserInfo } from "../use-auth/use-auth";
 
 export function useCart() {
   const { me } = useAuth();
 
   const { cache } = useSWRConfig();
 
-  const key = ["cart", me?.username] as const;
+  const key = ["cart", me] as const;
 
   const { data, mutate, ...rest } = useSWR<
     CartType,
     unknown,
-    readonly ["cart", string | undefined]
+    readonly ["cart", YandexUserInfo | undefined]
   >(key, ([key]) =>
-    me?.username
+    me
       ? fetcher(key, {
           credentials: "include",
         })
@@ -29,7 +29,7 @@ export function useCart() {
     fetcher: () => Promise<CartType> | CartType;
     options: MutatorOptions;
   }) => {
-    if (!me?.username) {
+    if (!me) {
       return mutate(options.optimisticData, options);
     } else {
       return mutate(fetcher, options);
