@@ -9,13 +9,8 @@ export const buttonStyles = tv({
   extend: baseVariants,
   variants: {
     ...baseVariants,
-    size: {
-      icon: styles["size-icon"]
-    }
   },
   defaultVariants: {
-    colorPallete: "yellow",
-    shadow: "md",
-    size: "lg",
+    colorPallete: "gray",
   },
 });

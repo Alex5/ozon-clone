@@ -4,16 +4,14 @@ import { useCart } from "@shared/api/hooks/use-cart/use-cart";
 import { Button } from "@shared/ui/button/button";
 import { CartProduct } from "./components/cart-product/cart-product";
 import { Link } from "react-router";
+import { calculateTotal } from "@shared/services/amount.service";
 
 export function CartSidebar() {
   const { cart } = useCart();
 
-  const total = Object.values(cart ?? {})?.reduce(
-    (acc, prev) => (acc += prev.product.currentPrice * prev.quantity),
-    0
-  );
-
   const cartItems = Object.values(cart ?? {});
+
+  const total = calculateTotal(cart);
 
   return (
     <aside className={styles["cart-sidebar"]}>
@@ -52,7 +50,6 @@ export function CartSidebar() {
           ))}
         </ul>
       )}
-
       <Link to="/cart" style={{ textDecoration: "none" }}>
         <Button radius="lg" style={{ width: "100%" }} disabled={!total}>
           <Text fontWeight="medium">

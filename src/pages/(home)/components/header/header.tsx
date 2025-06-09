@@ -6,6 +6,7 @@ import { repository } from "../../../../../package.json";
 import { useAuth } from "@shared/api/hooks/use-auth/use-auth";
 import { Text } from "@shared/ui/text/Text";
 import { Image } from "@shared/ui/image/image.component";
+import { ButtonLink } from "@shared/ui/button-link/button-link";
 
 export function Header() {
   const { logout, user } = useAuth();
@@ -30,11 +31,12 @@ export function Header() {
                 style={{ cursor: "pointer" }}
               />
             ) : (
-              <a href={import.meta.env.VITE_API_URL + "/api/v1/yandex"}>
-                <Button colorPallete="yellow" radius="md">
-                  <Text fontWeight="medium">Войти</Text>
-                </Button>
-              </a>
+              <ButtonLink
+                radius="md"
+                href={import.meta.env.VITE_API_URL + "/api/v1/yandex"}
+              >
+                <Text textStyle="md" fontWeight="medium">Войти</Text>
+              </ButtonLink>
             )}
           </Div>
           <a href={repository} target="_blank">
