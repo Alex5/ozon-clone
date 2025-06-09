@@ -19,24 +19,14 @@ type ButtonProps<E extends ElementType> = ButtonOwnProps<E> &
   VartiantTypes;
 
 const defaultElement = "button";
-
-export function Button<E extends ElementType = typeof defaultElement>({
-  children,
-  colorPallete,
-  size,
-  radius,
-  shadow,
-  as,
-  ...rest
-}: ButtonProps<E>) {
-  const TagName = as || defaultElement;
+export function Button<E extends ElementType = typeof defaultElement>(
+  props: ButtonProps<E>
+) {
+  const TagName = props.as || defaultElement;
 
   return (
-    <TagName
-      className={buttonStyles({ colorPallete, size, radius, shadow })}
-      {...rest}
-    >
-      {children}
+    <TagName className={buttonStyles(props)} {...props}>
+      {props.children}
     </TagName>
   );
 }

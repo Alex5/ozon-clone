@@ -38,8 +38,6 @@ export const ProductQuantitySelector = ({
       <div
         style={{
           display: "flex",
-          maxWidth: "80px",
-          width: "100%",
           alignItems: "center",
           gap: "4px",
           backgroundColor: "rgba(101,92,78,.1)",
@@ -63,13 +61,16 @@ const Increment = ({
 
   return (
     <Button
-      onClick={() => {
+      onClick={(e) => {
+        e.stopPropagation();
+
         onChange?.(quantity + 1);
 
         onIncrement?.(quantity + 1);
       }}
       shadow="none"
-      size="icon"
+      icon
+      size="sm"
       style={{
         backgroundColor: "transparent",
         borderRadius: "inherit",
@@ -103,7 +104,9 @@ const Decrement = ({
 
   return (
     <Button
-      onClick={() => {
+      onClick={(e) => {
+        e.stopPropagation();
+
         onChange?.(quantity - 1);
 
         onDecrement?.(quantity - 1);
@@ -114,7 +117,8 @@ const Decrement = ({
         borderRadius: "inherit",
         height: "inherit",
       }}
-      size="icon"
+      size="sm"
+      icon
     >
       <svg
         width="16"

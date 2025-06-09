@@ -1,7 +1,6 @@
 import { Div } from "@shared/ui/div/div";
 import styles from "./header.module.css";
 import { Github } from "lucide-react";
-import { Button } from "@shared/ui/button/button";
 import { repository } from "../../../../../package.json";
 import { useAuth } from "@shared/api/hooks/use-auth/use-auth";
 import { Text } from "@shared/ui/text/Text";
@@ -33,17 +32,25 @@ export function Header() {
             ) : (
               <ButtonLink
                 radius="md"
-                href={import.meta.env.VITE_API_URL + "/api/v1/yandex"}
+                to={import.meta.env.VITE_API_URL + "/api/v1/yandex"}
+                target="_self"
               >
-                <Text textStyle="md" fontWeight="medium">Войти</Text>
+                <Text textStyle="md" fontWeight="medium">
+                  Войти
+                </Text>
               </ButtonLink>
             )}
           </Div>
-          <a href={repository} target="_blank">
-            <Button colorPallete="gray" radius="lg">
-              <Github />
-            </Button>
-          </a>
+          <ButtonLink
+            to={repository}
+            target="_blank"
+            colorPallete="gray"
+            radius="lg"
+            size="md"
+            icon
+          >
+            <Github />
+          </ButtonLink>
         </Div>
       </div>
     </header>

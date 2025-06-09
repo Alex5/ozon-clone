@@ -1,7 +1,23 @@
+.width-full {
+  width: 100%;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
 .color-pallete-gray {
-  background-color: rgba(101,92,78,.1);
-  border-color: rgba(101,92,78,.1);
-  color: rgba(101,92,78,.1);
+  background-color: rgba(101, 92, 78, 0.1);
+  border-color: rgba(101, 92, 78, 0.1);
+  color: rgba(101, 92, 78, 0.1);
 }
 
 .color-pallete-yellow {
@@ -164,7 +180,7 @@
 }
 
 .gap-1 {
-  gap: 1rem;
+  gap: 0.5rem;
 }
 .gap-2 {
   gap: 2rem;

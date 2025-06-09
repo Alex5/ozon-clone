@@ -21,7 +21,7 @@ export function AddToCartButton({ product }: { product: ProductType }) {
           <Button
             onClick={() => removeFromCart(product)}
             radius="xl"
-            size="icon"
+            icon
             shadow="none"
             colorPallete="gray"
             style={{
@@ -48,10 +48,9 @@ export function AddToCartButton({ product }: { product: ProductType }) {
           >
             <Text fontWeight="medium">{quantity ?? 0}</Text>
           </div>
-
           <Button
             onClick={() => addToCart(product)}
-            size="icon"
+            icon
             radius="rounded"
             shadow="none"
             colorPallete="gray"

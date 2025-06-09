@@ -8,9 +8,14 @@ export const buttonStyles = tv({
   base: styles.button,
   extend: baseVariants,
   variants: {
-    ...baseVariants,
+    icon: {
+      true: styles["icon"],
+      false: null,
+    },
   },
   defaultVariants: {
     colorPallete: "gray",
+    size: "md",
+    width: "auto",
   },
 });
