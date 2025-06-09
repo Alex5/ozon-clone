@@ -12,6 +12,5 @@ export const buttonStyles = tv({
   },
   defaultVariants: {
     colorPallete: "gray",
-    shadow: "md",
   },
 });
