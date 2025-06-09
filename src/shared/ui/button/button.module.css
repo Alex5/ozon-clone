@@ -2,16 +2,18 @@
   display: flex;
   align-items: center;
   border: unset;
-  padding: 0 16px;
-  height: 42px;
+  padding: 0 24px;
+  height: 48px;
   justify-content: center;
   cursor: pointer;
+  color: var(--theme-text);
 }
 
 .button:disabled {
-  background-color: rgba(101,92,78,.1);
+  opacity: 0.5;
+  pointer-events: none;
 }
 
-.size-icon {
-  padding: 4px;
+.colorPallete-gray {
+  background-color: rgba(101, 92, 78, 0.1);
 }

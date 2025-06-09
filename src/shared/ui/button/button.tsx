@@ -1,28 +1,42 @@
 import { type VariantProps } from "tailwind-variants";
 
-import type { ButtonHTMLAttributes, DetailedHTMLProps } from "react";
 import { buttonStyles } from "./button.tv";
 
-type ButtonProps = DetailedHTMLProps<
-  ButtonHTMLAttributes<HTMLButtonElement>,
-  HTMLButtonElement
-> &
-  VariantProps<typeof buttonStyles>;
+import { type ComponentProps, type ElementType, type ReactNode } from "react";
 
-export function Button({
+type VartiantTypes = VariantProps<typeof buttonStyles>;
+
+type ButtonOwnProps<E extends ElementType = ElementType> = {
+  children: ReactNode;
+  primary?: boolean;
+  secondary?: boolean;
+  disabled?: boolean;
+  as?: E;
+};
+
+type ButtonProps<E extends ElementType> = ButtonOwnProps<E> &
+  Omit<ComponentProps<E>, keyof ButtonOwnProps> &
+  VartiantTypes;
+
+const defaultElement = "button";
+
+export function Button<E extends ElementType = typeof defaultElement>({
   children,
   colorPallete,
   size,
   radius,
   shadow,
+  as,
   ...rest
-}: ButtonProps) {
+}: ButtonProps<E>) {
+  const TagName = as || defaultElement;
+
   return (
-    <button
+    <TagName
       className={buttonStyles({ colorPallete, size, radius, shadow })}
       {...rest}
     >
       {children}
-    </button>
+    </TagName>
   );
 }
