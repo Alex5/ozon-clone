@@ -41,7 +41,7 @@ export function useAuth() {
   }
 
   return {
-    me: data,
+    user: data,
     logout,
     ...rest,
   };

@@ -8,7 +8,7 @@ import { Text } from "@shared/ui/text/Text";
 import { Image } from "@shared/ui/image/image.component";
 
 export function Header() {
-  const { logout, me } = useAuth();
+  const { logout, user } = useAuth();
 
   return (
     <header className={styles.header}>
@@ -21,9 +21,9 @@ export function Header() {
 
         <Div flex gap2>
           <Div flex gap2>
-            {me ? (
+            {user ? (
               <Image
-                src={`https://avatars.yandex.net/get-yapic/${me.default_avatar_id}/islands-retina-middle`}
+                src={`https://avatars.yandex.net/get-yapic/${user.default_avatar_id}/islands-retina-middle`}
                 onClick={logout}
                 radius="xl"
                 size="md"
