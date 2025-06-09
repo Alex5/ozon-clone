@@ -3,6 +3,16 @@ import styles from "./base-styles.module.css";
 
 export const baseVariants = tv({
   variants: {
+    ["width-full"]: {
+      true: styles["width-full"],
+    },
+    lineClamp2: {
+      true: styles["line-clamp-2"],
+    },
+    disabled: {
+      true: styles.disabled,
+      false: null,
+    },
     colorPallete: {
       yellow: styles["color-pallete-yellow"],
       gray: styles["color-pallete-gray"],
@@ -14,7 +24,7 @@ export const baseVariants = tv({
       lg: styles["size-lg"],
       sm: styles["size-sm"],
       md: styles["size-md"],
-      auto: styles["size-auto"]
+      auto: styles["size-auto"],
     },
     radius: {
       md: styles["radius-md"],

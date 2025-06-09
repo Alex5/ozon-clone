@@ -4,10 +4,14 @@ interface TextProps
   extends React.HTMLAttributes<HTMLSpanElement>,
     TextVariants {}
 
-export function Text({ children, textStyle, fontWeight, ...props }: TextProps) {
+export function Text(props: TextProps) {
   return (
-    <span className={text({ textStyle, fontWeight })} {...props}>
-      {children}
+    <span
+      className={text(props)}
+      title={props.children?.toLocaleString()}
+      {...props}
+    >
+      {props.children}
     </span>
   );
 }

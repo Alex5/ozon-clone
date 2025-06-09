@@ -1,10 +1,9 @@
 import { Text } from "@shared/ui/text/Text";
 import styles from "./cart-sidebar.module.css";
 import { useCart } from "@shared/api/hooks/use-cart/use-cart";
-import { Button } from "@shared/ui/button/button";
 import { CartProduct } from "./components/cart-product/cart-product";
-import { Link } from "react-router";
 import { calculateTotal } from "@shared/services/amount.service";
+import { ButtonLink } from "@shared/ui/button-link/button-link";
 
 export function CartSidebar() {
   const { cart } = useCart();
@@ -50,19 +49,24 @@ export function CartSidebar() {
           ))}
         </ul>
       )}
-      <Link to="/cart" style={{ textDecoration: "none" }}>
-        <Button radius="lg" style={{ width: "100%" }} disabled={!total}>
-          <Text fontWeight="medium">
-            {total
-              ? "В корзину " +
-                new Intl.NumberFormat("ru-RU", {
-                  currency: "RUB",
-                  style: "currency",
-                }).format(total)
-              : "Добавьте что-нибудь"}
-          </Text>
-        </Button>
-      </Link>
+      <ButtonLink
+        to="/cart"
+        radius="lg"
+        colorPallete={total ? "yellow" : "gray"}
+        disabled={!total}
+        size="lg"
+        width-full
+      >
+        <Text fontWeight="medium">
+          {total
+            ? "В корзину " +
+              new Intl.NumberFormat("ru-RU", {
+                currency: "RUB",
+                style: "currency",
+              }).format(total)
+            : "Добавьте что-нибудь"}
+        </Text>
+      </ButtonLink>
     </aside>
   );
 }
