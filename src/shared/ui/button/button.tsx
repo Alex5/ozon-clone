@@ -19,6 +19,7 @@ type ButtonProps<E extends ElementType> = ButtonOwnProps<E> &
   VartiantTypes;
 
 const defaultElement = "button";
+
 export function Button<E extends ElementType = typeof defaultElement>(
   props: ButtonProps<E>
 ) {

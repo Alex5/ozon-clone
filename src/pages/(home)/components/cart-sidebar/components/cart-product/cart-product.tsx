@@ -22,7 +22,7 @@ export function CartProduct(props: CartProductProps) {
 
   return (
     <Div flex gap1 itemsCenter width-full>
-      <Link to={`/cart`} style={{ all: "inherit", cursor: "pointer" }}>
+      <Link to={`/cart/${product.id}`} style={{ all: "inherit" }}>
         <Image
           src={snippetImage.url}
           radius="md"
