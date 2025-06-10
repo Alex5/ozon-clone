@@ -5,6 +5,17 @@ import { createRoot } from "react-dom/client";
 import { RouterProvider } from "./app/router";
 import { SWRProvider } from "./app/swr-provider";
 
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/react-lavka/cache-worker.js")
+      .then((reg) => console.log("✅ Service Worker registered", reg))
+      .catch((err) =>
+        console.error("❌ Service Worker registration failed", err)
+      );
+  });
+}
+
 const root = document.getElementById("root")!;
 
 root.style.setProperty(
