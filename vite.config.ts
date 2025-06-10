@@ -7,7 +7,10 @@ const plugins: PluginOption[] = [
   react(),
   tsconfigPaths(),
   vitePluginCache({
-    apiUrlPatter: /^https:\/\/alex5-hono-mock-api-9e61\.twc1\.net\/api\//,
+    apiProxy: {
+      prefix: "/api/v1/",
+      target: "https://alex5-hono-mock-api-9e61.twc1.net/api/v1/",
+    },
   }),
 ];
 
