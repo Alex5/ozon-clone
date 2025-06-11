@@ -7,7 +7,7 @@ const plugins: PluginOption[] = [
   react(),
   tsconfigPaths(),
   vitePluginCache({
-    excludedApiPaths: ["/api/cart"],
+    excludedApiPaths: ["/api/v1/cart"],
   }),
 ];
 
