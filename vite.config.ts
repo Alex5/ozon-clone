@@ -3,16 +3,7 @@ import react from "@vitejs/plugin-react";
 import tsconfigPaths from "vite-tsconfig-paths";
 import { vitePluginCache } from "vite-plugin-cache";
 
-const plugins: PluginOption[] = [
-  react(),
-  tsconfigPaths(),
-  vitePluginCache({
-    apiProxy: {
-      prefix: "/api/v1/",
-      target: "https://alex5-hono-mock-api-9e61.twc1.net/api/v1/",
-    },
-  }),
-];
+const plugins: PluginOption[] = [react(), tsconfigPaths(), vitePluginCache({})];
 
 export default defineConfig({
   base: "/react-lavka/",
