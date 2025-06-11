@@ -3,7 +3,13 @@ import react from "@vitejs/plugin-react";
 import tsconfigPaths from "vite-tsconfig-paths";
 import { vitePluginCache } from "vite-plugin-cache";
 
-const plugins: PluginOption[] = [react(), tsconfigPaths(), vitePluginCache()];
+const plugins: PluginOption[] = [
+  react(),
+  tsconfigPaths(),
+  vitePluginCache({
+    excludedApiPaths: ["/api/cart"],
+  }),
+];
 
 export default defineConfig({
   base: "/react-lavka/",
