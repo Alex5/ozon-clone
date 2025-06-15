@@ -10,12 +10,19 @@ const plugins: PluginOption[] = [
     config: (dc) => ({
       ...dc,
       "swr-api-cache": {
-        ...dc["swr-api-cache"],
-        match: (args) =>
-          dc["swr-api-cache"].match(args) &&
-          !args.url.pathname.includes("/api/v1/cart"),
+        strategy: "stale-while-revalidate",
+        match: ({ url, request }) =>
+          url.pathname.includes("/api/v1/") &&
+          !url.pathname.includes("/api/v1/cart") &&
+          request.method === "GET",
+        plugins: {
+          expiration: {
+            maxAgeSeconds: 60,
+            maxEntries: 100,
+          },
+        },
       },
-      "newtwork-first-api-cache": {
+      "network-first-api-cache": {
         match: ({ url, request }) =>
           url.pathname.includes("/api/v1/cart") && request.method === "GET",
         strategy: "network-first",
